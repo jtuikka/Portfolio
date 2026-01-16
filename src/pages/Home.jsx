@@ -1,12 +1,14 @@
 import LanguagesCarousel from "../components/LanguagesCarousel";
-import { languages } from "../data/languages";
-import { tools } from "../data/tools";
+import { getLanguages } from "../data/languages";
+import { getTools } from "../data/tools";
 import { useLanguage } from "../context/LanguageContext";
 import { translations } from "../translations/translations";
 
 export default function Home() {
   const { language } = useLanguage();
   const t = translations[language];
+  const languages = getLanguages(t);
+  const tools = getTools(t);
 
   return (
     <>
@@ -32,7 +34,7 @@ export default function Home() {
       
       <section className="skillsSection">
         <h2 className="skillsTitle">{t.home.programmingLanguagesTitle}</h2>
-        <LanguagesCarousel items={languages} />
+        <LanguagesCarousel items={languages} key={language} />
       </section>
       
       <section className="extrasSection">

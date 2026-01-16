@@ -1,58 +1,58 @@
 // src/data/languages.js
-export const languages = [
+export const getLanguages = (t) => [
   {
     name: "TypeScript",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-    description: "Tyypitän React-projekteja ja teen selkeämpiä rajapintoja.",
+    description: t.languages.descriptions.typescript,
   },
-    {
+  {
     name: "Python",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-    description: "Skriptaus, automaatio ja pieniä datakokeiluja.",
+    description: t.languages.descriptions.python,
   },
   {
     name: "Java",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
-    description: "OOP, GUI-työt, kouluprojektit ja perusarkkitehtuurit.",
+    description: t.languages.descriptions.java,
   },
   {
     name: "C",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
-    description: "Unity-projektit, gameplay-logiikka ja XR/VR-kokeilut.",
+    description: t.languages.descriptions.c,
   },
   {
     name: "C#",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
-    description: "Unity-projektit, gameplay-logiikka ja XR/VR-kokeilut.",
+    description: t.languages.descriptions.csharp,
   },
   {
     name: "SQL",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg",
-    description: "Peruskyselyt, relaatiomallit ja CRUD.",
+    description: t.languages.descriptions.sql,
   },
   {
     name: "Kotlin",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg",
-    description: "Skriptaus, automaatio ja pieniä datakokeiluja.",
+    description: t.languages.descriptions.kotlin,
   },
   {
     name: "React",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-    description: "Skriptaus, automaatio ja pieniä datakokeiluja.",
+    description: t.languages.descriptions.react,
   },
   {
     name: "html",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-    description: "Unity-projektit, gameplay-logiikka ja XR/VR-kokeilut.",
+    description: t.languages.descriptions.html,
   },
   {
     name: "css",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-    description: "Unity-projektit, gameplay-logiikka ja XR/VR-kokeilut.",
+    description: t.languages.descriptions.css,
   },
   {
     name: "JavaScript",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-    description: "Rakennan React-sovelluksia, komponentteja ja pieniä työkaluja.",
+    description: t.languages.descriptions.javascript,
   },
 ];
