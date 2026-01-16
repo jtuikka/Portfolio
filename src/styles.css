@@ -1,0 +1,379 @@
+/* =========================================================
+   CSS Variables
+   ========================================================= */
+:root{
+  --border:#dcdcdc;
+  --soft:#e9e9e9;
+  --text:#f3f3f3;
+  --bg:#080808;
+
+  /* Single source of truth for the fixed topbar height */
+  --topbar-h: 64px;
+}
+
+/* =========================================================
+   Base Reset & Global
+   ========================================================= */
+*{ box-sizing:border-box; margin:0; padding:0; }
+html,body{ height:100%; }
+
+body{
+  overflow-y: auto;
+  padding-top: var(--topbar-h); /* offset for fixed topbar */
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* =========================================================
+   App / Page Containers
+   ========================================================= */
+.page{
+  min-height: 100vh;
+  /* padding-top removed (already on body) */
+}
+
+.container,
+.inner{
+  width: 100%;
+}
+
+/* =========================================================
+   Topbar Navigation
+   ========================================================= */
+.topbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--topbar-h);
+  z-index: 10;
+
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 0 12px;
+}
+
+.topnav{
+  display:flex;
+  gap: 22px;
+}
+
+.toplink{
+  text-decoration:none;
+  color: var(--text);
+  font-size: 18px;
+}
+
+.langSwitch{
+  position:absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  display:flex;
+  align-items:center;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.langBtn{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 2px 4px;
+  font-size: 12px;
+  color: var(--text);
+}
+
+.langBtn.isActive{
+  text-decoration: underline;
+}
+
+.langSep{ opacity:.6; }
+
+/* =========================================================
+   Main Layout (Sidebar + Content)
+   ========================================================= */
+.mainContent{
+  padding-top: 24px;
+  padding-left: 5%;
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  width: 100%;
+}
+
+.leftSidebar{
+  width: 100%;
+  max-width: 300px;
+  padding: 0 20px;
+  flex-shrink: 0;
+}
+
+.rightSidebar{
+  flex: 1;
+  padding: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* =========================================================
+   Typography / Profile Block
+   ========================================================= */
+.description h1{
+  font-size: clamp(20px, 3vw, 32px);
+  margin: 0 0 10px;
+}
+
+.description p{
+  font-size: clamp(14px, 1.5vw, 18px);
+  line-height: 1.6;
+}
+
+.profileImage{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #ffffff;
+  margin: 0 0 1rem;
+}
+
+.nameText{
+  font-size: clamp(16px, 2vw, 28px);
+  color: var(--text);
+  text-align: center;
+}
+.nameText p{ margin: 0; }
+
+.profileText{
+  font-size: clamp(14px, 1.5vw, 20px);
+  color: var(--text);
+  text-align: center;
+  opacity: .8;
+}
+
+/* =========================================================
+   Legacy / Optional: Hero Layout (kept for later use)
+   ========================================================= */
+.hero{
+  display:grid;
+  grid-template-columns: 260px 1fr;
+  gap: 22px;
+  padding: 14px 10px 0;
+}
+
+.leftCard{
+  padding: 12px 10px;
+}
+
+.avatar{
+  width: 160px;
+  height: 170px;
+  background: #d8d8d8;
+  margin: 0 auto 12px;
+}
+
+.name{
+  text-align:center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.title{
+  margin: 6px 0 14px;
+  text-align:center;
+  font-size: 12px;
+  opacity:.8;
+}
+
+.contactBtns{
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+  align-items:center;
+  margin-bottom: 18px;
+}
+
+.btn{
+  width: 160px;
+  padding: 8px 10px;
+  background: #d8d8d8;
+  border: 1px solid var(--border);
+  text-decoration:none;
+  color: #111;
+  font-size: 12px;
+  text-align:center;
+}
+
+.sideHeading{
+  margin: 10px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.rightPanel{
+  border: 1px solid var(--border);
+  background: var(--soft);
+  min-height: 260px;
+  padding: 14px;
+}
+
+.rightInner{
+  height: 100%;
+  display:flex;
+  align-items:flex-start;
+}
+
+.placeholderText{
+  font-size: 12px;
+  line-height: 1.5;
+  max-width: 70ch;
+}
+
+.wideDivider{
+  margin: 26px 0 22px;
+  height: 70px;
+  background: #d9d9d9;
+  border: 1px solid var(--border);
+}
+
+.bottomGrid{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  padding: 6px 10px 0;
+}
+
+.bottomTitle{
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* =========================================================
+   Sections: Skills / Tools / Extras
+   ========================================================= */
+.skillsSection{
+  margin-top: 48px;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+.skillsTitle{
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 12px;
+  margin-left: 2.5%;
+}
+
+/* Tools */
+.toolsTitle{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.toolsList{
+  list-style: none;
+  margin: 16px 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.toolItem{
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.04);
+  color: var(--text);
+}
+
+.toolMeta{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.toolIcon{
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.toolName{ font-weight: 600; }
+
+.toolDescription{
+  margin: 0;
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+/* Extras layout */
+.extrasSection{
+  margin-top: 64px;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.toolsSection{
+  min-width: 0;
+}
+
+.extrasRight{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.infoBox{
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.04);
+  color: var(--text);
+}
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+@media (max-width: 900px){
+  .mainContent{ flex-direction: column; }
+
+  .leftSidebar{
+    max-width: 100%;
+    padding: 0 16px;
+  }
+
+  .rightSidebar{ padding: 16px; }
+
+  .hero{ grid-template-columns: 1fr; }
+  .bottomGrid{ grid-template-columns: 1fr 1fr; }
+
+  .extrasSection{ grid-template-columns: 1fr; }
+}
+
+@media (max-width: 700px){
+  .toolsList{ grid-template-columns: 1fr; }
+
+  .toolMeta{
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 520px){
+  .bottomGrid{ grid-template-columns: 1fr; }
+  .langSwitch{ right: 10px; }
+  .leftSidebar{ padding: 0 12px; }
+}

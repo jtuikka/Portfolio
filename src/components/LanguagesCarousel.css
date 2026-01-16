@@ -1,0 +1,138 @@
+/* Full-bleed */
+.langCarousel{
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: #0b0b0b;
+}
+
+.langCarousel__viewport{
+  width: 100%;
+  overflow: hidden;
+  padding: 14px max(18px, 4vw);
+}
+
+/* Track sisältää kaksi groupia peräkkäin */
+.langCarousel__track{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  width: max-content;
+  will-change: transform;
+
+  animation: langScroll var(--speed, 26s) linear infinite;
+}
+
+.langCarousel__group{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 14px;
+}
+
+.langCarousel:hover .langCarousel__track{
+  animation-play-state: paused;
+}
+
+/* SAUMATON: siirretään tasan yhden ryhmän leveys */
+@keyframes langScroll{
+  from { transform: translateX(0); }
+  to   { transform: translateX(calc(-1 * var(--shift, 0px))); }
+}
+
+/* Kortti */
+.langCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 64px;
+  width: 240px;
+  flex-shrink: 0;
+}
+
+
+.langCard:focus{
+  box-shadow: 0 0 0 2px rgba(220,220,220,0.35);
+}
+
+.langCard__icon{
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+
+.langCard__name{
+  font-size: 14px;
+  font-weight: 650;
+  margin: 0;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+/* Tooltip */
+.langCard__tooltip{
+  width: 100%;
+  margin-top: 8px;
+
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+
+  transition: opacity 160ms ease, max-height 200ms ease;
+}
+
+
+.langCard:hover .langCard__tooltip,
+.langCard:focus-within .langCard__tooltip{
+  opacity: 1;
+  max-height: 120px; /* tarpeeksi kuvaukselle */
+}
+
+
+.langCard__desc{
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.35;
+  color: var(--text);
+  opacity: 0.9;
+}
+
+@media (hover: none){
+  .langCard__tooltip{
+    position: static;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    margin-top: 8px;
+    max-width: 100%;
+  }
+  .langCard{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .langCard__header{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+  .langCard__name{
+    white-space: normal;
+  }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .langCarousel__track{
+    animation: none;
+  }
+}
