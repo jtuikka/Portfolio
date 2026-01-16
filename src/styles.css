@@ -121,6 +121,109 @@ body{
   padding-right: 5%;
 }
 
+/* 2x2 grid */
+.contactActions{
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* Buttons */
+.contactBtn{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.04);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.2;
+  cursor: pointer;
+
+  transition: background .15s ease, transform .15s ease;
+}
+
+.contactBtn:hover{
+  background: rgba(255,255,255,0.07);
+  transform: translateY(-1px);
+}
+
+/* Label row (icon + text) */
+.contactLabel{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 1;
+  transition: opacity .15s ease;
+}
+
+.contactIcon{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Value overlay (reveal) */
+.contactBtn--reveal{
+  overflow: hidden;
+}
+
+/* Tämä ratkaisee pitkän emailin:
+   - annetaan 2 riviä
+   - sallitaan sanan katkaisu @-kohdasta tai missä vain
+   - keskitys säilyy */
+.contactValue{
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 10px;
+  text-align: center;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .15s ease;
+
+  /* Long text handling */
+  max-width: 100%;
+  white-space: normal;         /* allow wrapping */
+  overflow-wrap: anywhere;     /* breaks long tokens */
+  word-break: break-word;      /* fallback */
+  line-height: 1.15;
+  font-size: 11px;             /* hieman pienempi mahtuu paremmin */
+}
+
+/* Hover/focus: show value, hide label */
+.contactBtn--reveal:hover .contactLabel,
+.contactBtn--reveal:focus-visible .contactLabel{
+  opacity: 0;
+}
+
+.contactBtn--reveal:hover .contactValue,
+.contactBtn--reveal:focus-visible .contactValue{
+  opacity: 1;
+}
+
+/* Mobile: no hover -> show values by default */
+@media (hover: none){
+  .contactBtn--reveal .contactLabel{ display: none; }
+
+  .contactBtn--reveal .contactValue{
+    position: static;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
 /* =========================================================
    Typography / Profile Block
    ========================================================= */
@@ -376,4 +479,127 @@ body{
   .bottomGrid{ grid-template-columns: 1fr; }
   .langSwitch{ right: 10px; }
   .leftSidebar{ padding: 0 12px; }
+}
+
+
+/* =========================================================
+   Languages page
+   ========================================================= */
+
+  .pageContent{
+  width: 100%;
+  padding: 24px 5% 40px;
+}
+
+   .languagesTitle{
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.languagesIntro{
+  margin: 0 0 18px;
+  opacity: .9;
+  line-height: 1.6;
+}
+
+/* 4 per row */
+.languagesGrid{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+/* Clickable card */
+.languageCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 18px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.04);
+  color: var(--text);
+  text-decoration: none;
+
+  transition: transform .12s ease, background .12s ease, border-color .12s ease;
+}
+
+.languageCard:hover{
+  transform: translateY(-2px);
+  background: rgba(255,255,255,0.07);
+}
+
+.languageCard:focus-visible{
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+.languageIcon{
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+}
+
+.languageName{
+  font-size: 13px;
+  font-weight: 600;
+  opacity: .95;
+  text-transform: none;
+}
+
+.projectsTitle{
+  font-size: 24px;
+  font-weight: 600;
+  margin: 24px 0 10px;
+}
+
+.backLink{
+  display: inline-block;
+  margin-bottom: 14px;
+  color: var(--text);
+  text-decoration: none;
+  opacity: .8;
+}
+.backLink:hover{ opacity: 1; }
+
+.langHeader{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.langHeaderIcon{
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.langHeaderTitle{
+  font-size: clamp(22px, 3vw, 34px);
+  margin: 0;
+}
+
+.langDescription{
+  opacity: .9;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1100px){
+  .languagesGrid{ grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 800px){
+  .languagesGrid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 520px){
+  .languagesGrid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }

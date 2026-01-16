@@ -1,11 +1,6 @@
 // src/data/languages.js
 export const getLanguages = (t) => [
   {
-    name: "TypeScript",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-    description: t.languages.descriptions.typescript,
-  },
-  {
     name: "Python",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
     description: t.languages.descriptions.python,
@@ -54,5 +49,10 @@ export const getLanguages = (t) => [
     name: "JavaScript",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
     description: t.languages.descriptions.javascript,
+  },
+  {
+    name: "TypeScript",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+    description: t.languages.descriptions.typescript,
   },
 ];

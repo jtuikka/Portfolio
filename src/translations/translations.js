@@ -2,7 +2,7 @@ export const translations = {
   fi: {
     nav: {
       home: 'Etusivu',
-      languages: 'Kielet'
+      languages: 'Kielet & projektit'
     },
     home: {
       welcomeTitle: 'Tervetuloa portfoliooni!',
@@ -10,7 +10,9 @@ export const translations = {
       degree: 'Tietotekniikan kandi',
       programmingLanguagesTitle: 'Ohjelmointikielet',
       toolsTitle: 'Työkalut',
+      educationTitle: 'Koulutus',
       extraBoxText: 'Tähän voi tulla esim. Education / Experience / Links',
+      languagesTitle: 'Kielet',
       extraBox2: 'Toinen laatikko',
       toolDescriptions: {
         git: 'Versionhallinta ja yhteistyökalu koodin hallintaan.',
@@ -26,6 +28,7 @@ export const translations = {
     },
     languages: {
       title: 'Ohjelmointikielet',
+      title2: 'Projektit',
       description: 'Tämä sivu tulee sisältämään yksityiskohtaista tietoa ohjelmointikielistä.',
       descriptions: {
         typescript: 'Tyypitän React-projekteja ja teen selkeämpiä rajapintoja.',
@@ -45,7 +48,7 @@ export const translations = {
   en: {
     nav: {
       home: 'Home',
-      languages: 'Languages'
+      languages: 'Languages & Projects'
     },
     home: {
       welcomeTitle: 'Welcome to my portfolio!',
@@ -53,7 +56,9 @@ export const translations = {
       degree: 'Bachelor of Computer Science and Engineering',
       programmingLanguagesTitle: 'Programming Languages',
       toolsTitle: 'Tools',
+      educationTitle: 'Education',
       extraBoxText: 'This can contain e.g. Education / Experience / Links',
+      languagesTitle: 'Languages',
       extraBox2: 'Second box',
       toolDescriptions: {
         git: 'Version control and collaboration tool for managing code repositories.',
@@ -69,6 +74,7 @@ export const translations = {
     },
     languages: {
       title: 'Programming Languages',
+      title2: 'Projects',
       description: 'This page will contain detailed information about programming languages.',
       descriptions: {
         typescript: 'Typing React projects and creating clearer interfaces.',

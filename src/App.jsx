@@ -2,6 +2,7 @@ import "./styles.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Languages from "./pages/Languages";
+import LanguageDetail from "./pages/LanguageDetail";
 import { LanguageProvider } from "./context/LanguageProvider";
 import { useLanguage } from "./context/LanguageContext";
 import { translations } from "./translations/translations";
@@ -38,6 +39,7 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/languages" element={<Languages />} />
+        <Route path="/languages/:slug" element={<LanguageDetail />} />
       </Routes>
     </div>
   );
