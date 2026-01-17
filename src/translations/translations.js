@@ -43,6 +43,42 @@ export const translations = {
         css: 'Unity-projektit, gameplay-logiikka ja XR/VR-kokeilut.',
         javascript: 'Rakennan React-sovelluksia, komponentteja ja pieniä työkaluja.'
       }
+    },
+    projects: {
+      school: 'Kouluprojekti',
+      personal: 'Henkilökohtainen projekti',
+      names: {
+        BachelorThesis: 'Kandidaatintyö',
+        portfolio: 'Portfolio-sivusto',
+        mobileComputingApp: 'Mobiilisovellusohjelmointi',
+        tamagotchi: 'Tamagotchi-projekti',
+        XRGame: 'XR-peli',
+        financeTrackerWeb: 'Budjetointisovellus',
+        iotWeatherStation: 'IoT-sääasema',
+        tira: 'Tira-harjoitustyö',
+        NLPproject: 'NLP-projekti',
+        csMarketTool: 'CS-markkinatyökalu',
+        HeightScale: 'HeightScale-sovellus',
+        minesweeper: 'Miinaharava',
+        threeDenvGame: '3D-ympäristöpeli',
+        VRbeerPong: 'VR Beer Pong'
+      },
+      descriptions: {
+        BachelorThesis: 'Tietotekniikan kandidaatintyö, jossa kehitettiin VR-sovellus Unity-pelimoottorilla.',
+        portfolio: 'Henkilökohtainen portfolio-sivusto, joka esittelee projekteja ja taitoja. Rakennettu Reactilla.',
+        mobileComputingApp: 'Android-sovellus mobiililaitteiden laskenta- ja anturiominaisuuksien hyödyntämiseen.',
+        tamagotchi: 'C-kielellä toteutettu Tamagotchi-peli mikrokontrollerille.',
+        XRGame: 'Immersive XR-peli Unitylla, joka hyödyntää virtuaalitodellisuutta.',
+        financeTrackerWeb: 'Web-pohjainen budjetointisovellus menojen ja tulojen seuraamiseen.',
+        iotWeatherStation: 'Raspberry Pi -pohjainen IoT-sääasema, joka kerää ja visualisoi säädataa.',
+        tira: 'Tietorakenteet ja algoritmit -kurssin harjoitustyö Javalla.',
+        NLPproject: 'Luonnollisen kielen käsittelyn projekti, jossa analysoitiin tekstiä Python-kirjastoilla.',
+        csMarketTool: 'Automatisoitu työkalu Counter-Strike-markkinadatan analysointiin.',
+        HeightScale: 'React Native -sovellus pituuden mittaamiseen puhelimen kameralla.',
+        minesweeper: 'Klassinen miinaharavapeli toteutettuna Pythonilla.',
+        threeDenvGame: 'Unity-peliprojekti, jossa kehitettiin kolmiulotteinen peliympäristö.',
+        VRbeerPong: 'Virtuaalitodellisuuspeli, jossa pelataan beer pongia VR-ympäristössä.'
+      }
     }
   },
   en: {
@@ -88,6 +124,42 @@ export const translations = {
         html: 'Unity projects, gameplay logic, and XR/VR experiments.',
         css: 'Unity projects, gameplay logic, and XR/VR experiments.',
         javascript: 'Building React applications, components, and small tools.'
+      }
+    },
+    projects: {
+      school: 'School Project',
+      personal: 'Personal Project',
+      names: {
+        BachelorThesis: 'Bachelor Thesis',
+        portfolio: 'Portfolio Website',
+        mobileComputingApp: 'Mobile Computing App',
+        tamagotchi: 'Tamagotchi Project',
+        XRGame: 'XR Game',
+        financeTrackerWeb: 'Finance Tracker',
+        iotWeatherStation: 'IoT Weather Station',
+        tira: 'Data Structures Project',
+        NLPproject: 'NLP Project',
+        csMarketTool: 'CS Market Tool',
+        HeightScale: 'HeightScale App',
+        minesweeper: 'Minesweeper',
+        threeDenvGame: '3D Environment Game',
+        VRbeerPong: 'VR Beer Pong'
+      },
+      descriptions: {
+        BachelorThesis: 'Computer Science bachelor thesis developing a VR application with Unity game engine.',
+        portfolio: 'Personal portfolio website showcasing projects and skills. Built with React.',
+        mobileComputingApp: 'Android application utilizing mobile device computing and sensor capabilities.',
+        tamagotchi: 'Tamagotchi game implemented in C for microcontroller.',
+        XRGame: 'Immersive XR game built with Unity, utilizing virtual reality.',
+        financeTrackerWeb: 'Web-based budgeting application for tracking expenses and income.',
+        iotWeatherStation: 'Raspberry Pi-based IoT weather station collecting and visualizing weather data.',
+        tira: 'Data structures and algorithms course project in Java.',
+        NLPproject: 'Natural language processing project analyzing text with Python libraries.',
+        csMarketTool: 'Automated tool for Counter-Strike market data analysis.',
+        HeightScale: 'React Native app for measuring height using phone camera.',
+        minesweeper: 'Classic minesweeper game implemented in Python.',
+        threeDenvGame: 'Unity game project developing a three-dimensional game environment.',
+        VRbeerPong: 'Virtual reality game playing beer pong in VR environment.'
       }
     }
   }
