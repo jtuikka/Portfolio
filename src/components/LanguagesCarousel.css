@@ -54,7 +54,9 @@
   min-height: 64px;
   width: 240px;
   flex-shrink: 0;
+  cursor: pointer;
 }
+
 
 
 .langCard:focus{
@@ -68,6 +70,9 @@
   flex-shrink: 0;
 }
 
+.langCard:hover{
+  transform: translateY(-2px);
+}
 
 .langCard__name{
   font-size: 14px;
@@ -128,6 +133,20 @@
 
   .langCard__name{
     white-space: normal;
+  }
+}
+
+.langCard.isOpen .langCard__tooltip{
+  opacity: 1;
+  max-height: 120px;
+}
+
+@media (hover: none){
+  .langCard__tooltip{
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 160ms ease, max-height 200ms ease;
   }
 }
 

@@ -491,6 +491,17 @@ body{
   padding: 24px 5% 40px;
 }
 
+.backLink{
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  padding: 0;
+  opacity: .8;
+}
+.backLink:hover{ opacity: 1; }
+
+
    .languagesTitle{
   font-size: 24px;
   font-weight: 600;

@@ -18,10 +18,10 @@ function slugify(name) {
         <div className="languagesGrid">
           {languages.map((lang) => (
             <Link
-              key={lang.name}
-              to={`/languages/${slugify(lang.name)}`}
+              key={lang.id}
+              to={`/languages/${slugify(lang.id)}`}
               className="languageCard"
-              aria-label={`Open ${lang.name}`}
+              aria-label={`Open ${lang.id}`}
             >
               <img
                 src={lang.icon}

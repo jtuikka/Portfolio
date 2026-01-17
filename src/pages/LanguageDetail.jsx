@@ -1,10 +1,11 @@
 import { useParams, Link } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
 import { translations } from "../translations/translations";
 import { getLanguages } from "../data/languages";
 
-function slugify(name) {
-  return name.toLowerCase().replace(/\s+/g, "-");
+function slugify(id) {
+  return id.toLowerCase().replace(/\s+/g, "-");
 }
 
 export default function LanguageDetail() {
@@ -12,9 +13,18 @@ export default function LanguageDetail() {
   const { language } = useLanguage();
   const t = translations[language];
 
+  const location = useLocation();
+  const navigate = useNavigate();
+
   const languages = getLanguages(t);
 
-  const lang = languages.find((l) => slugify(l.name) === slug);
+  const lang = languages.find((l) => slugify(l.id) === slug);
+
+  const handleBack = () => {
+    if (location.state?.from) navigate(-1);
+    else navigate("/languages");
+  };
+
 
   if (!lang) {
     return (
@@ -22,7 +32,16 @@ export default function LanguageDetail() {
         <div className="rightSidebar">
           <h1>Not found</h1>
           <p>Tätä kieltä ei löytynyt.</p>
-          <Link to="/languages">← Back</Link>
+          <button
+            className="backLink"
+            type="button"
+            onClick={() => {
+              if (location.state?.from) navigate(-1);
+              else navigate("/languages");
+            }}
+          >
+            ← Back
+          </button>
         </div>
       </main>
     );
@@ -31,7 +50,9 @@ export default function LanguageDetail() {
   return (
     <main className="mainContent">
       <div className="rightSidebar">
-        <Link className="backLink" to="/languages">← {t.languages.title}</Link>
+        <button className="backLink" type="button" onClick={handleBack}>
+          ← {t.languages.title}
+        </button>
 
         <div className="langHeader">
           <img src={lang.icon} alt="" className="langHeaderIcon" />
