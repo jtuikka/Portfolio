@@ -749,3 +749,83 @@ body{
   .projectTag{ order: 2; }
 }
 
+/* =========================================================
+   Languages Detail page
+   ========================================================= */
+
+.languageContentGrid {
+  display: grid;
+  grid-template-columns: 3fr 2fr; /* 60% / 40% */
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.languageDescriptionBlock {
+  max-width: 100%;
+}
+
+.languageCoursesBlock {
+  background: rgba(255, 255, 255, 0.02); /* kevyt erottelu, valinnainen */
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+
+   .languageCoursesList {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+}
+
+.languageCoursesList li {
+  margin-bottom: 0.4rem;
+}
+
+@media (max-width: 768px) {
+  .languageContentGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.languageTopGrid {
+  display: grid;
+  grid-template-columns: 3fr 2fr; /* 60 / 40 */
+  gap: 2.5rem;
+  align-items: start; /* 🔑 otsikot samalle tasolle */
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .languageTopGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.languageNavButtons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.languageNavButton {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: inherit;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.languageNavButton:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 768px) {
+  .languageNavButtons {
+    flex-direction: column;
+  }
+  .languageNavButton {
+    width: 100%;
+    text-align: center;
+  }
+}

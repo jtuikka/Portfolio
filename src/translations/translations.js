@@ -42,6 +42,32 @@ export const translations = {
         html: 'Unity-projektit, gameplay-logiikka ja XR/VR-kokeilut.',
         css: 'Unity-projektit, gameplay-logiikka ja XR/VR-kokeilut.',
         javascript: 'Rakennan React-sovelluksia, komponentteja ja pieniä työkaluja.'
+      },
+      descriptionsLong: {
+        typescript: 'TypeScript on Microsoftin kehittämä ohjelmointikieli, joka laajentaa JavaScriptiä staattisella tyypityksellä. Käytän TypeScriptiä pääasiassa React-projekteissä parantaakseni koodin luettavuutta ja ylläpidettävyyttä. Staattinen tyypitys auttaa havaitsemaan virheitä kehitysvaiheessa ja tekee koodista turvallisempaa. Lisäksi TypeScriptin interface- ja type-ominaisuudet helpottavat monimutkaisten datarakenteiden määrittelyä ja dokumentointia.',
+        python: 'Python on monipuolinen, korkean tason ohjelmointikieli, joka tunnetaan selkeästä syntaksistaan ja laajasta kirjastovalikoimastaan. Käytän Pythonia erityisesti skriptaukseen, automaatioon ja tiedon käsittelyyn. Kielen yksinkertaisuus tekee siitä erinomaisen työkalun nopeiden prototyyppien rakentamiseen. Olen käyttänyt Pythonia erilaisissa projekteissa datankäsittelystä web-skrapeaukseen ja koneoppimisen perusteisiin.',
+        java: 'Java on objektiorientoitunut ohjelmointikieli, joka tunnetaan luotettavuudestaan ja alustariippumattomuudestaan. Opiskelin Javaa yliopistossa ja käytin sitä useissa kouluprojekteissa, erityisesti tietorakenteiden ja algoritmien opetteluun. Java on opettanut minulle vahvat perusteet olio-ohjelmoinnista, design patterneista ja ohjelmiston arkkitehtuurista. Lisäksi olen rakentanut Javalla GUI-sovelluksia Swing- ja JavaFX-kirjastoilla.',
+        c: 'C on matalan tason ohjelmointikieli, joka tarjoaa suoran pääsyn laitteiston resursseihin ja erinomaisen suorituskyvyn. Olen käyttänyt C:tä pääasiassa sulautettujen järjestelmien ohjelmoinnissa, erityisesti mikrokontrolleri-projekteissa kuten Tamagotchi-pelissä. C:n ymmärtäminen on auttanut minua hahmottamaan muistin hallintaa ja tietokoneen toimintaa syvemmällä tasolla. Kieli on vaativa mutta palkitseva, ja se on opettanut minulle tärkeitä periaatteita tehokkuudesta ja resurssienhallinnasta.',
+        csharp: 'C# on Microsoftin kehittämä moderni, objektiorientoitunut ohjelmointikieli. Käytän C#:ia ensisijaisesti Unity-pelimoottorin kanssa pelikehityksessä. Kielen syntaksi on selkeä ja se tarjoaa erinomaisia työkaluja pelimekaniikoiden toteuttamiseen. Olen kehittänyt C#:lla useita VR- ja XR-projekteja, joissa hyödynnän Unityn ominaisuuksia ja C#:n tehokasta toiminnallisuutta. C# on opettanut minulle paljon tapahtumankäsittelystä, asynkronisesta ohjelmoinnista ja komponenttipohjaisesta suunnittelusta.',
+        sql: 'SQL (Structured Query Language) on tietokantojen hallintaan ja kyselyiden tekemiseen tarkoitettu kieli. Olen käyttänyt SQL:ää relaatiotietokantojen suunnitteluun ja hallintaan useissa projekteissa. Osaan kirjoittaa tehokkaita kyselyitä tiedon hakemiseen, muokkaamiseen ja analysointiin. SQL:n ymmärtäminen on ollut tärkeää web-sovellusten backend-kehityksessä, missä tietokannan tehokas käyttö on kriittistä sovelluksen suorituskyvylle.',
+        kotlin: 'Kotlin on moderni ohjelmointikieli, joka toimii JVM:llä ja on erityisen suosittu Android-sovelluskehityksessä. Olen käyttänyt Kotlinia mobiilisovellusten kehityksessä Android Studio -ympäristössä. Kielen tiivis syntaksi ja null-turvallisuus tekevät koodista vähemmän virhealtista verrattuna perinteiseen Javaan. Kotlin on myös täysin yhteensopiva Javan kanssa, mikä helpottaa olemassa olevan koodin integrointia.',
+        react: 'React on Facebookin kehittämä JavaScript-kirjasto käyttöliittymien rakentamiseen. Käytän Reactia modernien, responsiivisten web-sovellusten kehityksessä. Reactin komponenttipohjainen arkkitehtuuri tekee koodista modulaarista ja uudelleenkäytettävää. Olen tutustunut myös React Hookseihin, state managementiin ja React Routeriin. React on yksi tärkeimmistä työkaluistani web-kehityksessä.',
+        html: 'HTML (HyperText Markup Language) on web-sivujen rakenteen määrittelevä merkintäkieli. HTML on kaiken web-kehityksen perusta, ja osaan käyttää sitä semanttisesti oikein modernien verkkosovellusten rakentamiseen. Ymmärrän HTML5:n uudet ominaisuudet kuten semantic tagit, formit ja multimedian upotuksen. HTML-osaaminen yhdistettynä CSS:ään ja JavaScriptiin mahdollistaa monipuolisten web-sovellusten kehittämisen.',
+        css: 'CSS (Cascading Style Sheets) on tyylittelykieli, jolla määritellään web-sivujen ulkoasu ja layout. Hallitsen CSS:n perusteet ja modernit ominaisuudet kuten Flexbox, Grid ja animaatiot. Osaan luoda responsiivisia käyttöliittymiä, jotka toimivat eri laitteilla. Ymmärrän myös CSS-preprocessorien kuten Sassin käytön ja CSS-in-JS -ratkaisut React-projekteissa.',
+        javascript: 'JavaScript on web-kehityksen keskeinen ohjelmointikieli, joka mahdollistaa interaktiiviset ja dynaamiset verkkosivut. Käytän JavaScriptiä sekä frontend- että backend-kehityksessä. Hallitsen modernin ES6+ -syntaksin ja asynkronisen ohjelmoinnin promiseilla ja async/await-rakenteilla. JavaScript on tärkeä työkalu minulle, ja käytän sitä päivittäin React-sovellusten kehityksessä. Ymmärrän myös Node.js-ympäristön ja npm-ekosysteemin.'
+      },
+      courses: {
+        typescript: ['Web-ohjelmoinnin perusteet', 'React-kehitystyö', 'Full Stack -kehitys'],
+        python: ['Ohjelmoinnin perusteet', 'Tietorakenteet ja algoritmit', 'Koneoppimisen perusteet', 'Tiedon louhinta'],
+        java: ['Olio-ohjelmointi', 'Ohjelmistotuotanto', 'Tietorakenteet ja algoritmit', 'Käyttöjärjestelmät'],
+        c: ['Sulautetut järjestelmät', 'Tietotekniikan fysiikka', 'Mikrokontrollereiden ohjelmointi'],
+        csharp: ['Peliohjelmointi', 'XR-kehitys', 'Unity-pelimoottori', 'Kandidaatintyö'],
+        sql: ['Tietokannat', 'Web-ohjelmointi', 'Tietokantasuunnittelu'],
+        kotlin: ['Mobiiliohjelmointi', 'Android-sovelluskehitys', 'Mobile Computing'],
+        react: ['Web-ohjelmoinnin jatko', 'Modern JavaScript', 'Frontend-kehitys'],
+        html: ['Web-ohjelmoinnin perusteet', 'Käyttöliittymäsuunnittelu', 'Web-teknologiat'],
+        css: ['Web-ohjelmoinnin perusteet', 'Responsiivinen suunnittelu', 'UI/UX-perusteet'],
+        javascript: ['Web-ohjelmoinnin perusteet', 'Funktionaalinen ohjelmointi', 'Asynkroninen ohjelmointi', 'Node.js']
       }
     },
     projects: {
@@ -124,6 +150,32 @@ export const translations = {
         html: 'Unity projects, gameplay logic, and XR/VR experiments.',
         css: 'Unity projects, gameplay logic, and XR/VR experiments.',
         javascript: 'Building React applications, components, and small tools.'
+      },
+      descriptionsLong: {
+        typescript: 'TypeScript is a programming language developed by Microsoft that extends JavaScript with static typing. I primarily use TypeScript in React projects to improve code readability and maintainability. Static typing helps catch errors during development and makes code safer. Additionally, TypeScript\'s interface and type features facilitate the definition and documentation of complex data structures.',
+        python: 'Python is a versatile, high-level programming language known for its clear syntax and extensive library ecosystem. I use Python especially for scripting, automation, and data processing. The language\'s simplicity makes it an excellent tool for building rapid prototypes. I have used Python in various projects ranging from data processing to web scraping and machine learning fundamentals.',
+        java: 'Java is an object-oriented programming language known for its reliability and platform independence. I studied Java at university and used it in numerous school projects, particularly for learning data structures and algorithms. Java has taught me strong fundamentals in object-oriented programming, design patterns, and software architecture. I have also built GUI applications with Java using Swing and JavaFX libraries.',
+        c: 'C is a low-level programming language that provides direct access to hardware resources and excellent performance. I have used C primarily in embedded systems programming, especially in microcontroller projects like the Tamagotchi game. Understanding C has helped me comprehend memory management and computer operation at a deeper level. The language is demanding but rewarding, and it has taught me important principles about efficiency and resource management.',
+        csharp: 'C# is a modern, object-oriented programming language developed by Microsoft. I use C# primarily with the Unity game engine in game development. The language\'s syntax is clear and it offers excellent tools for implementing game mechanics. I have developed several VR and XR projects with C#, utilizing Unity\'s features and C#\'s powerful functionality. C# has taught me a lot about event handling, asynchronous programming, and component-based design.',
+        sql: 'SQL (Structured Query Language) is a language designed for database management and querying. I have used SQL for designing and managing relational databases in several projects. I can write efficient queries for retrieving, modifying, and analyzing data. Understanding SQL has been important in backend development of web applications, where efficient database usage is critical for application performance.',
+        kotlin: 'Kotlin is a modern programming language that runs on the JVM and is particularly popular in Android application development. I have used Kotlin in mobile application development with Android Studio environment. The language\'s concise syntax and null safety make code less error-prone compared to traditional Java. Kotlin is also fully interoperable with Java, which facilitates integration of existing code.',
+        react: 'React is a JavaScript library developed by Facebook for building user interfaces. I use React to develop modern, responsive web applications. React\'s component-based architecture makes code modular and reusable. I have also become familiar with React Hooks, state management, and React Router. React is one of my most important tools in web development.',
+        html: 'HTML (HyperText Markup Language) is a markup language that defines the structure of web pages. HTML is the foundation of all web development, and I can use it semantically correctly to build modern web applications. I understand HTML5\'s new features such as semantic tags, forms, and multimedia embedding. HTML knowledge combined with CSS and JavaScript enables the development of versatile web applications.',
+        css: 'CSS (Cascading Style Sheets) is a styling language used to define the appearance and layout of web pages. I master CSS fundamentals and modern features like Flexbox, Grid, and animations. I can create responsive user interfaces that work across different devices. I also understand the use of CSS preprocessors like Sass and CSS-in-JS solutions in React projects.',
+        javascript: 'JavaScript is the central programming language of web development, enabling interactive and dynamic websites. I use JavaScript in both frontend and backend development. I master modern ES6+ syntax and asynchronous programming with promises and async/await constructs. JavaScript is an important tool for me, and I use it daily in React application development. I also understand the Node.js environment and npm ecosystem.'
+      },
+      courses: {
+        typescript: ['Web Programming Fundamentals', 'React Development', 'Full Stack Development'],
+        python: ['Programming Fundamentals', 'Data Structures and Algorithms', 'Machine Learning Basics', 'Data Mining'],
+        java: ['Object-Oriented Programming', 'Software Engineering', 'Data Structures and Algorithms', 'Operating Systems'],
+        c: ['Embedded Systems', 'Computer Engineering Physics', 'Microcontroller Programming'],
+        csharp: ['Game Programming', 'XR Development', 'Unity Game Engine', 'Bachelor Thesis'],
+        sql: ['Databases', 'Web Programming', 'Database Design'],
+        kotlin: ['Mobile Programming', 'Android Application Development', 'Mobile Computing'],
+        react: ['Advanced Web Programming', 'Modern JavaScript', 'Frontend Development'],
+        html: ['Web Programming Fundamentals', 'User Interface Design', 'Web Technologies'],
+        css: ['Web Programming Fundamentals', 'Responsive Design', 'UI/UX Basics'],
+        javascript: ['Web Programming Fundamentals', 'Functional Programming', 'Asynchronous Programming', 'Node.js']
       }
     },
     projects: {

@@ -1,6 +1,7 @@
 // src/data/projects.js
 export const getProjects = (t) => [
     {
+    id: "bachelor-thesis",
     name: t.projects.names.BachelorThesis,
     description: t.projects.descriptions.BachelorThesis,
     link: "",
@@ -9,6 +10,7 @@ export const getProjects = (t) => [
     type: t.projects.school,
     },
   {
+    id: "portfolio",
     name: t.projects.names.portfolio,
     description: t.projects.descriptions.portfolio,
     link: "",
@@ -17,6 +19,7 @@ export const getProjects = (t) => [
     type: t.projects.personal,
   },
     {
+    id: "mobile-computing-app",
     name: t.projects.names.mobileComputingApp,
     description: t.projects.descriptions.mobileComputingApp,
     link: "",
@@ -25,6 +28,7 @@ export const getProjects = (t) => [
     type: t.projects.school,
   },
   {
+    id: "tamagotchi",
     name: t.projects.names.tamagotchi,
     description: t.projects.descriptions.tamagotchi,
     link: "",
@@ -33,6 +37,7 @@ export const getProjects = (t) => [
     type: t.projects.school,
     },
     {
+    id: "xr-game",
     name: t.projects.names.XRGame,
     description: t.projects.descriptions.XRGame,
     link: "",
@@ -41,6 +46,7 @@ export const getProjects = (t) => [
     type: t.projects.school,
   },
     {
+    id: "finance-tracker-web",
     name: t.projects.names.financeTrackerWeb,
     description: t.projects.descriptions.financeTrackerWeb,
     link: "",
@@ -49,6 +55,7 @@ export const getProjects = (t) => [
     type: t.projects.school,
   },
     {
+    id: "iot-weather-station",
     name: t.projects.names.iotWeatherStation,
     description: t.projects.descriptions.iotWeatherStation,
     link: "",
@@ -57,6 +64,7 @@ export const getProjects = (t) => [
     type: t.projects.school,
   },
     {
+    id: "tira",
     name: t.projects.names.tira,
     description: t.projects.descriptions.tira,
     link: "",
@@ -65,6 +73,7 @@ export const getProjects = (t) => [
     type: t.projects.school,
   },
     {
+    id: "nlp-project",
     name: t.projects.names.NLPproject,
     description: t.projects.descriptions.NLPproject,
     link: "",
@@ -73,6 +82,7 @@ export const getProjects = (t) => [
     type: t.projects.school,
   },
     {
+    id: "cs-market-tool",
     name: t.projects.names.csMarketTool,
     description: t.projects.descriptions.csMarketTool,
     link: "",
@@ -81,6 +91,7 @@ export const getProjects = (t) => [
     type: t.projects.personal,
   },
     {
+    id: "height-scale",
     name: t.projects.names.HeightScale,
     description: t.projects.descriptions.HeightScale,
     link: "",
@@ -89,6 +100,7 @@ export const getProjects = (t) => [
     type: t.projects.school,
   },
     {
+    id: "minesweeper",
     name: t.projects.names.minesweeper,
     description: t.projects.descriptions.minesweeper,
     link: "",
@@ -97,6 +109,7 @@ export const getProjects = (t) => [
     type: t.projects.school,
   },
    {
+    id: "3d-env-game",
     name: t.projects.names.threeDenvGame,
     description: t.projects.descriptions.threeDenvGame,
     link: "",
@@ -105,6 +118,7 @@ export const getProjects = (t) => [
     type: t.projects.school,
   },
     {
+    id: "vr-beer-pong",
     name: t.projects.names.VRbeerPong,
     description: t.projects.descriptions.VRbeerPong,
     link: "",

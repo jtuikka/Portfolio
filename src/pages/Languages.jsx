@@ -11,8 +11,8 @@ export default function Languages() {
   const languages = getLanguages(t);
   const projects = getProjects(t);
 
-  function slugify(name) {
-    return name.toLowerCase().replace(/\s+/g, "-");
+  function slugify(id) {
+    return id.toLowerCase().replace(/\s+/g, "-");
   }
 
   // technology id -> icon (assumes project.technologies items match lang.id)
@@ -51,7 +51,12 @@ export default function Languages() {
           const isSchool = project.type === "school";
 
           return (
-            <div key={project.name} className="projectCard">
+            <Link 
+              key={project.id} 
+              to={`/projects/${project.id}`}
+              className="projectCard"
+              aria-label={`Open ${project.name}`}
+            >
               <div className="projectHeader">
                 <div className="projectName">{project.name}</div>
 
@@ -80,7 +85,7 @@ export default function Languages() {
                   {project.type}
                 </div>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>

@@ -1,8 +1,10 @@
-import { useParams, Link } from "react-router-dom";
+import { useMemo, useRef } from "react";
+import { useParams } from "react-router-dom";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
 import { translations } from "../translations/translations";
 import { getLanguages } from "../data/languages";
+import { getProjects } from "../data/projects";
 
 function slugify(id) {
   return id.toLowerCase().replace(/\s+/g, "-");
@@ -16,8 +18,7 @@ export default function LanguageDetail() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const languages = getLanguages(t);
-
+  const languages = useMemo(() => getLanguages(t), [t]);
   const lang = languages.find((l) => slugify(l.id) === slug);
 
   const handleBack = () => {
@@ -25,6 +26,70 @@ export default function LanguageDetail() {
     else navigate("/languages");
   };
 
+  // ✅ Projektit ja filtteröinti kielen perusteella
+  const allProjects = getProjects(t);
+  const relatedProjects = allProjects.filter((p) =>
+    (p.technologies || []).some((tech) => slugify(tech) === slug)
+  );
+
+ // ✅ Prev/Next kieli (wrap-around)
+const { prevLang, nextLang } = useMemo(() => {
+  const currentIndex = languages.findIndex((l) => slugify(l.id) === slug);
+
+  // jos slug ei löydy, älä kaada appia
+  if (currentIndex === -1 || languages.length === 0) {
+    return { prevLang: null, nextLang: null };
+  }
+
+  const prevIndex = (currentIndex - 1 + languages.length) % languages.length;
+  const nextIndex = (currentIndex + 1) % languages.length;
+
+  return {
+    prevLang: languages[prevIndex],
+    nextLang: languages[nextIndex],
+  };
+}, [languages, slug]);
+
+
+  const goPrev = () => {
+    if (prevLang) navigate(`/languages/${slugify(prevLang.id)}`);
+  };
+
+  const goNext = () => {
+    if (nextLang) navigate(`/languages/${slugify(nextLang.id)}`);
+  };
+
+  // ✅ Swipe (mobiili)
+  const touchStart = useRef({ x: 0, y: 0, t: 0 });
+
+  const onTouchStart = (e) => {
+    const t0 = e.touches[0];
+    touchStart.current = { x: t0.clientX, y: t0.clientY, t: Date.now() };
+  };
+
+  const onTouchEnd = (e) => {
+    const t1 = e.changedTouches[0];
+    const dx = t1.clientX - touchStart.current.x;
+    const dy = t1.clientY - touchStart.current.y;
+    const dt = Date.now() - touchStart.current.t;
+
+    // Kynnykset: riittävän pitkä vaakapyyhkäisy, ei “vahingossa” scrollista
+    const MIN_DIST = 60;      // px
+    const MAX_OFF_AXIS = 80;  // px
+    const MAX_TIME = 700;     // ms
+
+    if (dt > MAX_TIME) return;
+    if (Math.abs(dx) < MIN_DIST) return;
+    if (Math.abs(dy) > MAX_OFF_AXIS) return;
+
+    if (dx < 0) {
+      // swipe vasemmalle -> seuraava
+      goNext();
+    } else {
+      // swipe oikealle -> edellinen
+      goPrev();
+    }
+  };
 
   if (!lang) {
     return (
@@ -32,14 +97,7 @@ export default function LanguageDetail() {
         <div className="rightSidebar">
           <h1>Not found</h1>
           <p>Tätä kieltä ei löytynyt.</p>
-          <button
-            className="backLink"
-            type="button"
-            onClick={() => {
-              if (location.state?.from) navigate(-1);
-              else navigate("/languages");
-            }}
-          >
+          <button className="backLink" type="button" onClick={handleBack}>
             ← Back
           </button>
         </div>
@@ -49,19 +107,81 @@ export default function LanguageDetail() {
 
   return (
     <main className="mainContent">
-      <div className="rightSidebar">
+      {/* Swipe-alue: laita tähän, jos haluat että pyyhkäisy toimii koko sivulla */}
+      <div
+        className="rightSidebar"
+        onTouchStart={onTouchStart}
+        onTouchEnd={onTouchEnd}
+      >
         <button className="backLink" type="button" onClick={handleBack}>
           ← {t.languages.title}
         </button>
 
-        <div className="langHeader">
-          <img src={lang.icon} alt="" className="langHeaderIcon" />
-          <h1 className="langHeaderTitle">{lang.name}</h1>
+        <div className="languageTopGrid">
+          {/* VASEN: KIELI */}
+          <div className="languageMainHeader">
+            <div className="langHeader">
+              <img src={lang.icon} alt="" className="langHeaderIcon" />
+              <h1 className="langHeaderTitle">{lang.name}</h1>
+            </div>
+
+            <p className="langDescription">{lang.descriptionLong}</p>
+          </div>
+
+          {/* OIKEA: KURSSIT */}
+          <div className="languageCoursesBlock">
+            <h2 className="languageCoursesTitle">Kurssit</h2>
+
+            <ul className="languageCoursesList">
+              {lang.courses.map((course, index) => (
+                <li key={index}>{course}</li>
+              ))}
+            </ul>
+          </div>
         </div>
+        <h2 className="languageProjectsTitle">Projektit</h2>
 
-        <p className="langDescription">{lang.description}</p>
+        {relatedProjects.length === 0 ? (
+          <p className="languagesIntro">
+            Tähän kieleen liittyviä projekteja ei löytynyt.
+          </p>
+        ) : (
+          <div className="projectsGrid">
+            {relatedProjects.map((p) => (
+              <article key={p.id} className="projectCard">
+                <div className="projectHeader">
+                  <div className="projectName">{p.name}</div>
+                  <div className="projectDescription">{p.description}</div>
+                </div>
 
-        {/* myöhemmin: projektit / kokemustaso / linkit */}
+                <div className="projectFooter">
+                  <div className="projectTechRow">
+                    {(p.technologies || []).map((tech) => (
+                      <span key={tech} className="projectTag">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  {p.type && <span className="projectTag">{p.type}</span>}
+                </div>
+              </article>
+            ))}
+          </div>
+        )}
+         {/* ✅ Edellinen / Seuraava -napit */}
+        <div className="languageNavButtons">
+          {prevLang && (
+            <button className="languageNavButton prev" type="button" onClick={goPrev}>
+              ← {prevLang.name}
+            </button>
+          )}
+          {nextLang && (
+            <button className="languageNavButton next" type="button" onClick={goNext}>
+              {nextLang.name} →
+            </button>
+          )}
+        </div>
       </div>
     </main>
   );
