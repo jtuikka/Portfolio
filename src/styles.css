@@ -631,6 +631,7 @@ body{
   border: 1px solid var(--border);
   background: rgba(255,255,255,0.04);
   color: var(--text);
+  text-decoration: none;
 
   transition: transform .12s ease, background .12s ease, border-color .12s ease;
 
@@ -780,6 +781,10 @@ body{
   margin-bottom: 0.4rem;
 }
 
+.languageProjectsTitle {
+  margin-bottom: 12px;
+}
+
 @media (max-width: 768px) {
   .languageContentGrid {
     grid-template-columns: 1fr;
@@ -793,6 +798,13 @@ body{
   align-items: start; /* 🔑 otsikot samalle tasolle */
   margin-top: 1.5rem;
 }
+
+.projectCardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 
 @media (max-width: 768px) {
   .languageTopGrid {

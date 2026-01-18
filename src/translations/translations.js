@@ -2,7 +2,7 @@ export const translations = {
   fi: {
     nav: {
       home: 'Etusivu',
-      languages: 'Kielet & projektit'
+      languages: 'Kielet ja projektit'
     },
     home: {
       welcomeTitle: 'Tervetuloa portfoliooni!',
@@ -30,6 +30,12 @@ export const translations = {
       title: 'Ohjelmointikielet',
       title2: 'Projektit',
       description: 'Tämä sivu tulee sisältämään yksityiskohtaista tietoa ohjelmointikielistä.',
+      notFound: 'Ei löytynyt',
+      languageNotFound: 'Tätä kieltä ei löytynyt.',
+      back: 'Takaisin',
+      coursesTitle: 'Kurssit',
+      projectsTitle: 'Projektit',
+      noRelatedProjects: 'Tähän kieleen liittyviä projekteja ei löytynyt.',
       descriptions: {
         typescript: 'Tyypitän React-projekteja ja teen selkeämpiä rajapintoja.',
         python: 'Skriptaus, automaatio ja pieniä datakokeiluja.',
@@ -138,6 +144,12 @@ export const translations = {
       title: 'Programming Languages',
       title2: 'Projects',
       description: 'This page will contain detailed information about programming languages.',
+      notFound: 'Not found',
+      languageNotFound: 'This language was not found.',
+      back: 'Back',
+      coursesTitle: 'Courses',
+      projectsTitle: 'Projects',
+      noRelatedProjects: 'No projects related to this language were found.',
       descriptions: {
         typescript: 'Typing React projects and creating clearer interfaces.',
         python: 'Scripting, automation, and small data experiments.',

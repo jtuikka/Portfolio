@@ -15,11 +15,11 @@ export default function Languages() {
     return id.toLowerCase().replace(/\s+/g, "-");
   }
 
-  // technology id -> icon (assumes project.technologies items match lang.id)
-  const techIconById = languages.reduce((acc, lang) => {
-    acc[lang.id] = lang.icon;
+  const techIconBySlug = languages.reduce((acc, lang) => {
+    acc[slugify(lang.id)] = lang.icon;
     return acc;
   }, {});
+
 
   return (
     <main className="pageContent">
@@ -48,10 +48,11 @@ export default function Languages() {
 
       <div className="projectsGrid">
         {projects.map((project) => {
-          const isSchool = project.type === "school";
+          const isSchool = project.type === t.projects.school;
+
 
           return (
-            <Link 
+            <Link
               key={project.id} 
               to={`/projects/${project.id}`}
               className="projectCard"
@@ -66,7 +67,7 @@ export default function Languages() {
               <div className="projectFooter">
                 <div className="projectTechRow" aria-label={`${project.name} technologies`}>
                   {project.technologies.map((tech) => {
-                    const icon = techIconById[tech];
+                    const icon = techIconBySlug[slugify(tech)];
                     if (!icon) return null;
                     return (
                       <img
@@ -80,10 +81,11 @@ export default function Languages() {
                     );
                   })}
                 </div>
-
-                <div className={`projectTag ${isSchool ? "tagSchool" : "tagPersonal"}`}>
-                  {project.type}
-                </div>
+                {project.type && (
+                  <div className={`projectTag ${isSchool ? "tagSchool" : "tagPersonal"}`}>
+                    {project.type}
+                  </div>
+                )}
               </div>
             </Link>
           );

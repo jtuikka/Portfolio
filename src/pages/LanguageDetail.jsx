@@ -1,5 +1,5 @@
 import { useMemo, useRef } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
 import { translations } from "../translations/translations";
@@ -95,10 +95,10 @@ const { prevLang, nextLang } = useMemo(() => {
     return (
       <main className="mainContent">
         <div className="rightSidebar">
-          <h1>Not found</h1>
-          <p>Tätä kieltä ei löytynyt.</p>
+          <h1>{t.languages.notFound}</h1>
+          <p>{t.languages.languageNotFound}</p>
           <button className="backLink" type="button" onClick={handleBack}>
-            ← Back
+            ← {t.languages.back}
           </button>
         </div>
       </main>
@@ -130,7 +130,7 @@ const { prevLang, nextLang } = useMemo(() => {
 
           {/* OIKEA: KURSSIT */}
           <div className="languageCoursesBlock">
-            <h2 className="languageCoursesTitle">Kurssit</h2>
+            <h2 className="languageCoursesTitle">{t.languages.coursesTitle}</h2>
 
             <ul className="languageCoursesList">
               {lang.courses.map((course, index) => (
@@ -139,33 +139,55 @@ const { prevLang, nextLang } = useMemo(() => {
             </ul>
           </div>
         </div>
-        <h2 className="languageProjectsTitle">Projektit</h2>
+        <h2 className="languageProjectsTitle">{t.languages.projectsTitle}</h2>
 
         {relatedProjects.length === 0 ? (
           <p className="languagesIntro">
-            Tähän kieleen liittyviä projekteja ei löytynyt.
+            {t.languages.noRelatedProjects}
           </p>
         ) : (
           <div className="projectsGrid">
             {relatedProjects.map((p) => (
-              <article key={p.id} className="projectCard">
-                <div className="projectHeader">
-                  <div className="projectName">{p.name}</div>
-                  <div className="projectDescription">{p.description}</div>
-                </div>
-
-                <div className="projectFooter">
-                  <div className="projectTechRow">
-                    {(p.technologies || []).map((tech) => (
-                      <span key={tech} className="projectTag">
-                        {tech}
-                      </span>
-                    ))}
+              <Link key={p.id} to={`/projects/${p.id}`} className="projectCardLink">
+                <article key={p.id} className="projectCard">
+                  <div className="projectHeader">
+                    <div className="projectName">{p.name}</div>
+                    <div className="projectDescription">{p.description}</div>
                   </div>
 
-                  {p.type && <span className="projectTag">{p.type}</span>}
-                </div>
-              </article>
+                  <div className="projectFooter">
+                    <div className="projectTechRow">
+                      {(p.technologies || []).map((tech) => {
+                        const techLang = languages.find((l) => slugify(l.id) === slugify(tech));
+
+                        return techLang?.icon ? (
+                          <img
+                            key={tech}
+                            className="projectTechIcon"
+                            src={techLang.icon}
+                            alt={techLang.name}
+                            title={techLang.name}
+                          />
+                        ) : (
+                          <span key={tech} className="projectTag">
+                            {tech}
+                          </span>
+                        );
+                      })}
+                    </div>
+                    {p.type && (
+                      <span
+                        className={
+                          "projectTag " +
+                          (p.type === t.projects.school ? "tagSchool" : "tagPersonal")
+                        }
+                      >
+                        {p.type}
+                      </span>
+                    )}
+                  </div>
+                </article>
+              </Link>
             ))}
           </div>
         )}
