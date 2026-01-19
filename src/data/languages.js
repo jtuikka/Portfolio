@@ -57,6 +57,14 @@ export const getLanguages = (t) => [
     courses: t.languages.courses?.react,
   },
   {
+    id: "reactnative",
+    name: "React Native",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original.svg",
+    description: t.languages.descriptions.reactnative,
+    descriptionLong: t.languages.descriptionsLong?.reactnative,
+    courses: t.languages.courses?.reactnative,
+  },
+  {
     id: "html",
     name: "HTML",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",

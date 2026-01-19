@@ -841,3 +841,171 @@ body{
     text-align: center;
   }
 }
+
+/* =========================================================
+   Project Detail page (same style as LanguageDetail)
+   ========================================================= */
+
+.projectTopGrid {
+  display: grid;
+  grid-template-columns: 3fr 2fr; /* 60 / 40 */
+  gap: 2.5rem;
+  align-items: start;
+  margin-top: 1.5rem;
+}
+
+.projectDetailTitle {
+  font-size: clamp(22px, 3vw, 34px);
+  margin: 0 0 10px;
+}
+
+.projectDetailDescription {
+  opacity: .9;
+  line-height: 1.6;
+}
+
+.projectGitLink {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--text);
+  opacity: .9;
+  text-decoration: underline;
+}
+
+.projectGitLink:hover {
+  opacity: 1;
+}
+
+.projectTechBlock {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.projectTechTitle {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.projectMediaSection {
+  margin-top: 2rem;
+}
+
+.projectMediaTitle {
+  margin: 0 0 12px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.projectMediaGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.projectMediaImage {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.04);
+  object-fit: cover;
+}
+
+.projectMediaVideo {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.04);
+}
+
+.projectMediaItem {
+  width: 100%;
+}
+
+.projectMediaEmbed {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.04);
+}
+
+.projectGitButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 14px;
+  padding: 0.5rem 0.9rem;
+
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.projectGitButton:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-1px);
+}
+
+.projectGitIcon {
+  width: 16px;
+  height: 16px;
+  opacity: 0.9;
+}
+.techIconWrap {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;          /* 🔑 kaikille sama leveys */
+  height: 44px;         /* 🔑 kaikille sama korkeus */
+}
+
+.techTooltip {
+  position: absolute;
+  top: calc(100% + 6px);   /* 🔑 alle */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.75);
+  color: var(--text);
+
+  font-size: 12px;
+  line-height: 1;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+  z-index: 50;
+}
+
+/* Desktop hover */
+.techIconWrap:hover .techTooltip {
+  opacity: 1;
+}
+
+
+/* Mobile: stack columns & make media 1 per row */
+@media (max-width: 768px) {
+  .projectTopGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .projectMediaGrid {
+    grid-template-columns: 1fr;
+  }
+}
