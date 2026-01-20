@@ -43,6 +43,21 @@ function AppContent() {
         <Route path="/languages/:slug" element={<LanguageDetail />} />
         <Route path="/projects/:slug" element={<ProjectDetail />} />
       </Routes>
+      {/* FOOTER */}
+      <footer className="footer">
+        <div className="footerInner">
+          <span>© {new Date().getFullYear()} Janne Tuikka</span>
+          <span className="footerSep">•</span>
+          <a
+            href="https://github.com/jtuikka"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footerLink"
+          >
+            GitHub
+          </a>
+        </div>
+      </footer>      
     </div>
   );
 }

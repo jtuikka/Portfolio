@@ -41,7 +41,8 @@ body {
    ========================================================= */
 .page{
   min-height: 100vh;
-  /* padding-top removed (already on body) */
+  display: flex;
+  flex-direction: column;
 }
 
 .container,
@@ -89,6 +90,10 @@ body {
   font-size: 18px;
 }
 
+.toplink:hover{
+  text-decoration: underline;
+}
+
 .langSwitch{
   grid-column: 3;
   justify-self: end;
@@ -114,6 +119,43 @@ body {
 }
 
 .langSep{ opacity:.6; }
+
+/* =========================================================
+   Footer
+   ========================================================= */
+
+.footer{
+  margin-top: auto;              /* 🔑 työntää footerin alas */
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.footerInner{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.footerLink{
+  color: var(--text);
+  text-decoration: none;
+}
+
+.footerLink:hover{
+  text-decoration: underline;
+}
+
+.footerSep{
+  opacity: 0.5;
+}
 
 /* =========================================================
    Main Layout (Sidebar + Content)
