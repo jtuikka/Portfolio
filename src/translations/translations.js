@@ -113,7 +113,9 @@ export const translations = {
         sql: `Minulta löytyy perustason osaaminen SQL-kyselykielestä, jota olen käyttänyt relaatiotietokantojen kanssa työskentelyssä. Osaan kirjoittaa 
         peruskyselyjä tietojen hakemiseen, lisäämiseen, päivittämiseen ja poistamiseen. Ymmärrän myös relaatiotietokantojen rakenteen ja peruskäsitteet, kuten taulut, rivit, sarakkeet ja avaimet. 
         Olen käyttänys SQL:ää osana projekteja, joissa tarvitaan tietojen tallentamista ja hakemista tehokkaasti. Minulta löytyy perustiedot tietokantasuunnittelusta ja normalisoinnista.`,
-        kotlin: ``,
+        kotlin: `Minulla on perustason osaaminen Kotlin-ohjelmointikielestä, jota olen käyttänyt Android-sovelluskehityksessä Android Studio -ympäristössä. Ymmärrän Kotlinin syntaksin ja keskeiset ominaisuudet, 
+        sekä Gradle-konfiguraatiot. Osaan toteuttaa perusmobiilisovelluksia, jotka hyödyntävät Androidin käyttöliittymäkomponentteja, kuten aktiviteetteja, fragmentteja ja näkymiä.
+        Osaan myös käsitellä käyttäjän syötteitä, navigointia ja elinkaaren hallintaa Android-sovelluksissa.`,
         react: `Minulta löytyy hyvä osaaminen Reactista ja moderneista frontend-kehityksen käytännöistä. Olen käyttänyt Reactia projekteissa,
          joissa olen rakentanut interaktiivisia web-sovelluksia komponenttipohjaisella lähestymistavalla. Osaan käyttää React Hooks-ominaisuuksia, kuten useState ja useEffect.
          React Routerin avulla olen toteuttanut monisivuisia sovelluksia ja hallinnut reititystä sujuvasti. <br><br>
@@ -172,20 +174,20 @@ export const translations = {
         VRbeerPong: 'VR Beer Pong'
       },
       descriptions: {
-        BachelorThesis: 'Tietotekniikan kandidaatintyö, jossa kehitettiin VR-sovellus Unity-pelimoottorilla.',
+        BachelorThesis: 'VR pelin, joka valmentaa lapsia magneettikuvaukseen, jatkokehitystä Unitylla.',
         portfolio: 'Henkilökohtainen portfolio-sivusto, joka esittelee projekteja ja taitoja. Rakennettu Reactilla.',
         mobileComputingApp: 'Android-sovellus mobiililaitteiden laskenta- ja anturiominaisuuksien hyödyntämiseen.',
         tamagotchi: 'C-kielellä toteutettu Tamagotchi-peli mikrokontrollerille.',
-        XRGame: 'Immersive XR-peli Unitylla, joka hyödyntää virtuaalitodellisuutta.',
+        XRGame: 'XR-peli Unitylla, joka hyödyntää virtuaalitodellisuutta.',
         financeTrackerWeb: 'Web-pohjainen budjetointisovellus menojen ja tulojen seuraamiseen.',
         iotWeatherStation: 'Raspberry Pi -pohjainen IoT-sääasema, joka kerää ja visualisoi säädataa.',
         tira: 'Tietorakenteet ja algoritmit -kurssin harjoitustyö Javalla.',
         NLPproject: 'Luonnollisen kielen käsittelyn projekti, jossa analysoitiin tekstiä Python-kirjastoilla.',
         csMarketTool: 'Automatisoitu työkalu Counter-Strike-markkinadatan analysointiin.',
-        HeightScale: 'React Native -sovellus pituuden mittaamiseen puhelimen kameralla.',
+        HeightScale: 'React Native -sovellus pituuden mittaamiseen Bluetooth vaa\'alla.',
         minesweeper: 'Klassinen miinaharavapeli toteutettuna Pythonilla.',
         threeDenvGame: 'Unity-peliprojekti, jossa kehitettiin kolmiulotteinen peliympäristö.',
-        VRbeerPong: 'Virtuaalitodellisuuspeli, jossa pelataan beer pongia VR-ympäristössä.'
+        VRbeerPong: 'Cardboard VR peli, jossa pelataan beer pongia VR-ympäristössä.'
       },
       descriptionsLong: {
         BachelorThesis: 'Kandidaatintyössäni kehitettiin virtuaalitodellisuussovellus Unity-pelimoottorilla, joka tutkii käyttäjien vuorovaikutusta immersiivisissä ympäristöissä. Työssä keskityttiin VR-teknologian hyödyntämiseen oppimiskokemusten parantamiseksi. Sovellus suunniteltiin käyttäjäkeskeisesti, ja siinä hyödynnettiin C#-ohjelmointia pelimekaniikkojen toteuttamiseen. Työ sisälsi myös käyttäjätestausta ja suorituskyvyn optimointia VR-laitteille.',
@@ -344,7 +346,10 @@ export const translations = {
         I have used SQL in projects that require efficient data storage and retrieval, and I have basic knowledge of
         database design and normalization.`,
 
-        kotlin: ``,
+        kotlin: `I have foundational knowledge of the Kotlin programming language, which I have used in Android application
+        development within the Android Studio environment. I understand Kotlin syntax and core features, as well as Gradle
+        configurations. I can implement basic mobile applications that utilize Android's user interface components, such as
+        activities, fragments, and views. I can also handle user input, navigation, and lifecycle management in Android apps.`,
 
         react: `I have strong experience with React and modern frontend development practices. I have used React in projects
         where I built interactive web applications using a component-based approach. I am proficient with React Hooks such
@@ -421,20 +426,20 @@ export const translations = {
         VRbeerPong: 'VR Beer Pong'
       },
       descriptions: {
-        BachelorThesis: 'Computer Science bachelor thesis developing a VR application with Unity game engine.',
+        BachelorThesis: 'Continuation development of a VR game training children for MRI using Unity.',
         portfolio: 'Personal portfolio website showcasing projects and skills. Built with React.',
         mobileComputingApp: 'Android application utilizing mobile device computing and sensor capabilities.',
         tamagotchi: 'Tamagotchi game implemented in C for microcontroller.',
-        XRGame: 'Immersive XR game built with Unity, utilizing virtual reality.',
+        XRGame: 'XR game built with Unity, utilizing virtual reality.',
         financeTrackerWeb: 'Web-based budgeting application for tracking expenses and income.',
         iotWeatherStation: 'Raspberry Pi-based IoT weather station collecting and visualizing weather data.',
         tira: 'Data structures and algorithms course project in Java.',
         NLPproject: 'Natural language processing project analyzing text with Python libraries.',
         csMarketTool: 'Automated tool for Counter-Strike market data analysis.',
-        HeightScale: 'React Native app for measuring height using phone camera.',
+        HeightScale: 'React Native app for measuring height using a Bluetooth scale.',
         minesweeper: 'Classic minesweeper game implemented in Python.',
         threeDenvGame: 'Unity game project developing a three-dimensional game environment.',
-        VRbeerPong: 'Virtual reality game playing beer pong in VR environment.'
+        VRbeerPong: 'Cardboard VR game, beer pong in VR environment.'
       },
       descriptionsLong: {
         BachelorThesis: 'Kandidaatintyössäni kehitettiin virtuaalitodellisuussovellus Unity-pelimoottorilla, joka tutkii käyttäjien vuorovaikutusta immersiivisissä ympäristöissä. Työssä keskityttiin VR-teknologian hyödyntämiseen oppimiskokemusten parantamiseksi. Sovellus suunniteltiin käyttäjäkeskeisesti, ja siinä hyödynnettiin C#-ohjelmointia pelimekaniikkojen toteuttamiseen. Työ sisälsi myös käyttäjätestausta ja suorituskyvyn optimointia VR-laitteille.',
