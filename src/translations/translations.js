@@ -81,9 +81,29 @@ export const translations = {
       },
       descriptionsLong: {
         typescript: 'TypeScript on Microsoftin kehittämä ohjelmointikieli, joka laajentaa JavaScriptiä staattisella tyypityksellä. Käytän TypeScriptiä pääasiassa React-projekteissä parantaakseni koodin luettavuutta ja ylläpidettävyyttä. Staattinen tyypitys auttaa havaitsemaan virheitä kehitysvaiheessa ja tekee koodista turvallisempaa. Lisäksi TypeScriptin interface- ja type-ominaisuudet helpottavat monimutkaisten datarakenteiden määrittelyä ja dokumentointia.',
-        python: 'Python on monipuolinen, korkean tason ohjelmointikieli, joka tunnetaan selkeästä syntaksistaan ja laajasta kirjastovalikoimastaan. Käytän Pythonia erityisesti skriptaukseen, automaatioon ja tiedon käsittelyyn. Kielen yksinkertaisuus tekee siitä erinomaisen työkalun nopeiden prototyyppien rakentamiseen. Olen käyttänyt Pythonia erilaisissa projekteissa datankäsittelystä web-skrapeaukseen ja koneoppimisen perusteisiin.',
-        java: 'Java on objektiorientoitunut ohjelmointikieli, joka tunnetaan luotettavuudestaan ja alustariippumattomuudestaan. Opiskelin Javaa yliopistossa ja käytin sitä useissa kouluprojekteissa, erityisesti tietorakenteiden ja algoritmien opetteluun. Java on opettanut minulle vahvat perusteet olio-ohjelmoinnista, design patterneista ja ohjelmiston arkkitehtuurista. Lisäksi olen rakentanut Javalla GUI-sovelluksia Swing- ja JavaFX-kirjastoilla.',
-        c: 'C on matalan tason ohjelmointikieli, joka tarjoaa suoran pääsyn laitteiston resursseihin ja erinomaisen suorituskyvyn. Olen käyttänyt C:tä pääasiassa sulautettujen järjestelmien ohjelmoinnissa, erityisesti mikrokontrolleri-projekteissa kuten Tamagotchi-pelissä. C:n ymmärtäminen on auttanut minua hahmottamaan muistin hallintaa ja tietokoneen toimintaa syvemmällä tasolla. Kieli on vaativa mutta palkitseva, ja se on opettanut minulle tärkeitä periaatteita tehokkuudesta ja resurssienhallinnasta.',
+        python: `Minulla on monipuolinen osaaminen Python-ohjelmoinnissa, jota olen kehittänyt sekä kurssien että käytännön projektien kautta. Ohjelmoinnin alkeet -kurssilla olen 
+          oppinut Pythonin perusteet, kuten muuttujat, ehtorakenteet, silmukat ja funktiot, sekä hyvän ohjelmointikäytännön merkityksen.<br><br>
+
+          Luonnollisen kielen käsittely ja tekstinlouhinta -kurssin pohjalta olen toteuttanut NLP-projektin, jossa analysoin ja käsittelin tekstidataa Python-kirjastoja hyödyntäen.
+           Projektissa keskityin tekstin esikäsittelyyn, analyysiin ja tulosten tulkintaan, mikä kehitti ymmärrystäni datalähtöisestä ohjelmoinnista.<br><br>
+
+          Esineiden internet -kurssilla toteutin ryhmässä Raspberry Pi -pohjaisen IoT-sääaseman, joka kerää ja visualisoi säätietoa.
+           Projektissa yhdistyivät Python-ohjelmointi, laitteistojen ohjaus, sensoridatan käsittely sekä datan esittäminen käyttäjälle ymmärrettävässä muodossa. <br><br>
+
+          Näiden kurssien ja projektien kautta olen oppinut soveltamaan Pythonia käytännön ongelmien ratkaisuun, työskentelemään
+           erilaisten kirjastojen kanssa sekä kehittämään toimivia ja selkeitä ohjelmistoratkaisuja.`,
+        java: `Minulla on vahva osaaminen Java-ohjelmoinnissa, jota olen kehittänyt useiden kurssien ja projektien kautta. Ohjelmointi 2 -kurssilla opin Java-ohjelmoinnin perusteet, kuten syntaksin, olio-ohjelmoinnin periaatteet ja perusrakenteet.
+         Kurssi kehitti kykyäni kirjoittaa puhdasta, ylläpidettävää ja virheitä kestävä koodia. <br><br>
+         Tietorakenteet ja algoritmit -kurssilla syvensin osaamistani keskittymällä tehokkaisiin tietorakenteisiin, kuten listoihin, pinoihin, jonoihin ja puihin, sekä algoritmeihin, 
+         kuten lajitteluun ja hakemiseen. Opin analysoimaan algoritmien aikavaativuutta ja valitsemaan tilanteeseen sopivimmat ratkaisut. <br><br>
+          Ohjelmointi 3 -kurssilla opin edistyneempiä Java-konsepteja, kuten säikeistystä, tiedostojen käsittelyä ja virheenkäsittelyä. Näiden kurssien kautta olen kehittänyt
+           kykyäni suunnitella ja toteuttaa monimutkaisempia ohjelmistoratkaisuja Java-kielellä.`,
+        c: `Kurssi Tietokonejärjestelmät on syventänyt ymmärrystäni tietokoneen toiminnasta ja ohjelmoinnista C-kielellä, mukaan lukien keskeiset käsitteet kuten datatyypit,
+         osoittimet, muistin hallinta ja suoritin- sekä binäärilaskennan periaatteet. Opintojakson kautta olen oppinut kirjoittamaan, kääntämään ja debuggaamaan C-koodia sellaisissa
+          ympäristöissä, joissa resurssien hallinta ja suoritustehokkuus ovat olennaisia osia ohjelmiston toiminnassa.<br><br>
+
+          Kurssiin sisältynyt Tamacochi-projekti on tarjonnut käytännön kokemusta C-ohjelmoinnin soveltamisesta projektimuotoisesti: olen toteuttanut täysin toimivan ohjelman alusta loppuun, 
+          suunnitellut sen ohjelma-arkkitehtuurin, hyödyntänyt tehokkaita tietorakenteita ja hallinnut ohjelman tilaa dynaamisesti yhdessä ryhmän kanssa. Projektissa olen myös harjoitellut virheiden etsintää (debugging) osana kehitysprosessia.`,
         csharp: 'C# on Microsoftin kehittämä moderni, objektiorientoitunut ohjelmointikieli. Käytän C#:ia ensisijaisesti Unity-pelimoottorin kanssa pelikehityksessä. Kielen syntaksi on selkeä ja se tarjoaa erinomaisia työkaluja pelimekaniikoiden toteuttamiseen. Olen kehittänyt C#:lla useita VR- ja XR-projekteja, joissa hyödynnän Unityn ominaisuuksia ja C#:n tehokasta toiminnallisuutta. C# on opettanut minulle paljon tapahtumankäsittelystä, asynkronisesta ohjelmoinnista ja komponenttipohjaisesta suunnittelusta.',
         sql: 'SQL (Structured Query Language) on tietokantojen hallintaan ja kyselyiden tekemiseen tarkoitettu kieli. Olen käyttänyt SQL:ää relaatiotietokantojen suunnitteluun ja hallintaan useissa projekteissa. Osaan kirjoittaa tehokkaita kyselyitä tiedon hakemiseen, muokkaamiseen ja analysointiin. SQL:n ymmärtäminen on ollut tärkeää web-sovellusten backend-kehityksessä, missä tietokannan tehokas käyttö on kriittistä sovelluksen suorituskyvylle.',
         kotlin: 'Kotlin on moderni ohjelmointikieli, joka toimii JVM:llä ja on erityisen suosittu Android-sovelluskehityksessä. Olen käyttänyt Kotlinia mobiilisovellusten kehityksessä Android Studio -ympäristössä. Kielen tiivis syntaksi ja null-turvallisuus tekevät koodista vähemmän virhealtista verrattuna perinteiseen Javaan. Kotlin on myös täysin yhteensopiva Javan kanssa, mikä helpottaa olemassa olevan koodin integrointia.',
@@ -94,18 +114,18 @@ export const translations = {
         javascript: 'JavaScript on web-kehityksen keskeinen ohjelmointikieli, joka mahdollistaa interaktiiviset ja dynaamiset verkkosivut. Käytän JavaScriptiä sekä frontend- että backend-kehityksessä. Hallitsen modernin ES6+ -syntaksin ja asynkronisen ohjelmoinnin promiseilla ja async/await-rakenteilla. JavaScript on tärkeä työkalu minulle, ja käytän sitä päivittäin React-sovellusten kehityksessä. Ymmärrän myös Node.js-ympäristön ja npm-ekosysteemin.'
       },
       courses: {
-        typescript: ['Web-ohjelmoinnin perusteet', 'React-kehitystyö', 'Full Stack -kehitys'],
-        python: ['Ohjelmoinnin perusteet', 'Tietorakenteet ja algoritmit', 'Koneoppimisen perusteet', 'Tiedon louhinta'],
-        java: ['Olio-ohjelmointi', 'Ohjelmistotuotanto', 'Tietorakenteet ja algoritmit', 'Käyttöjärjestelmät'],
-        c: ['Sulautetut järjestelmät', 'Tietotekniikan fysiikka', 'Mikrokontrollereiden ohjelmointi'],
-        csharp: ['Peliohjelmointi', 'XR-kehitys', 'Unity-pelimoottori', 'Kandidaatintyö'],
-        sql: ['Tietokannat', 'Web-ohjelmointi', 'Tietokantasuunnittelu'],
-        kotlin: ['Mobiiliohjelmointi', 'Android-sovelluskehitys', 'Mobile Computing'],
-        react: ['Web-ohjelmoinnin jatko', 'Modern JavaScript', 'Frontend-kehitys'],
-        reactnative: ['Mobiiliohjelmointi', 'React Native -sovelluskehitys'],
-        html: ['Web-ohjelmoinnin perusteet', 'Käyttöliittymäsuunnittelu', 'Web-teknologiat'],
-        css: ['Web-ohjelmoinnin perusteet', 'Responsiivinen suunnittelu', 'UI/UX-perusteet'],
-        javascript: ['Web-ohjelmoinnin perusteet', 'Funktionaalinen ohjelmointi', 'Asynkroninen ohjelmointi', 'Node.js']
+        typescript: ['Itse opiskeltu'],
+        python: ['Luonnollisen kielen käsittely ja tekstinlouhinta', ' Esineiden internet', 'Digitaalinen kuvankäsittely', 'Ohjelmoinnin alkeet'],
+        java: ['Ohjelmointi 3', 'Tietorakenteet ja algoritmit', 'Ohjelmointi 2'],
+        c: ['Tietokonejärjestelmät'],
+        csharp: ['VR-järjestelmät ja ihmiset', 'Kandidaatintyö / Tietotekniikka', '3D-virtuaaliympäristöt ja sovellukset', 'Johdatus XR-järjestelmiin'],
+        sql: ['Tietokannat'],
+        kotlin: ['Mobiili tietotekniikka'],
+        react: ['Itse opiskeltu'],
+        reactnative: ['Itse opiskeltu'],
+        html: ['Ohjelmointi 4'],
+        css: ['Ohjelmointi 4'],
+        javascript: ['Ohjelmointi 4']
       }
     },
     projects: {
@@ -269,18 +289,18 @@ export const translations = {
         javascript: 'JavaScript is the central programming language of web development, enabling interactive and dynamic websites. I use JavaScript in both frontend and backend development. I master modern ES6+ syntax and asynchronous programming with promises and async/await constructs. JavaScript is an important tool for me, and I use it daily in React application development. I also understand the Node.js environment and npm ecosystem.'
       },
       courses: {
-        typescript: ['Web Programming Fundamentals', 'React Development', 'Full Stack Development'],
-        python: ['Programming Fundamentals', 'Data Structures and Algorithms', 'Machine Learning Basics', 'Data Mining'],
-        java: ['Object-Oriented Programming', 'Software Engineering', 'Data Structures and Algorithms', 'Operating Systems'],
-        c: ['Embedded Systems', 'Computer Engineering Physics', 'Microcontroller Programming'],
-        csharp: ['Game Programming', 'XR Development', 'Unity Game Engine', 'Bachelor Thesis'],
-        sql: ['Databases', 'Web Programming', 'Database Design'],
-        kotlin: ['Mobile Programming', 'Android Application Development', 'Mobile Computing'],
-        react: ['Advanced Web Programming', 'Modern JavaScript', 'Frontend Development'],
-        reactnative: ['Mobile Programming', 'React Native Application Development'],
-        html: ['Web Programming Fundamentals', 'User Interface Design', 'Web Technologies'],
-        css: ['Web Programming Fundamentals', 'Responsive Design', 'UI/UX Basics'],
-        javascript: ['Web Programming Fundamentals', 'Functional Programming', 'Asynchronous Programming', 'Node.js']
+        typescript: ['Self-studied'],
+        python: ['Natural Language Processing and Text Mining', 'Internet of Things', 'Digital Image Processing', 'Elementary Programming'],
+        java: ['Programming 3', 'Data Structures and Algorithms', 'Programming 2'],
+        c: ['Computer Systems'],
+        csharp: ['VR Systems and People', 'Bachelor Thesis / Computer Science', '3D Virtual Environments and Applications', 'Introduction to XR Systems'],
+        sql: ['Databases'],
+        kotlin: ['Mobile Computing'],
+        react: ['Self-studied'],
+        reactnative: ['Self-studied'],
+        html: ['Programming 4'],
+        css: ['Programming 4'],
+        javascript: ['Programming 4']
       }
     },
     projects: {

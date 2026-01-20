@@ -665,6 +665,7 @@ body {
 .langDescription{
   opacity: .9;
   line-height: 1.6;
+  padding-bottom: 24px;
 }
 
 /* Responsive */

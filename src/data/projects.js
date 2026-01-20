@@ -48,7 +48,7 @@ export const getProjects = (t) => [
     descriptionLong: t.projects.descriptionsLong?.XRGame,
     link: "https://github.com/jtuikka/XRgame-JTuikka",
     media: "",
-    technologies: ["csharp", "unity", "git", "github"],
+    technologies: ["csharp", "unity", "github"],
     type: t.projects.school,
   },
     {

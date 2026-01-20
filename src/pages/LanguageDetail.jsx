@@ -45,17 +45,14 @@ export default function LanguageDetail() {
     else navigate("/languages");
   };
 
-  // ✅ Projektit ja filtteröinti kielen perusteella
   const allProjects = getProjects(t);
   const relatedProjects = allProjects.filter((p) =>
     (p.technologies || []).some((tech) => slugify(tech) === slug)
   );
 
- // ✅ Prev/Next kieli (wrap-around)
 const { prevLang, nextLang } = useMemo(() => {
   const currentIndex = languages.findIndex((l) => slugify(l.id) === slug);
 
-  // jos slug ei löydy, älä kaada appia
   if (currentIndex === -1 || languages.length === 0) {
     return { prevLang: null, nextLang: null };
   }
@@ -78,7 +75,6 @@ const { prevLang, nextLang } = useMemo(() => {
     if (nextLang) navigate(`/languages/${slugify(nextLang.id)}`);
   };
 
-  // ✅ Swipe (mobiili)
   const touchStart = useRef({ x: 0, y: 0, t: 0 });
 
   const onTouchStart = (e) => {
@@ -92,20 +88,17 @@ const { prevLang, nextLang } = useMemo(() => {
     const dy = t1.clientY - touchStart.current.y;
     const dt = Date.now() - touchStart.current.t;
 
-    // Kynnykset: riittävän pitkä vaakapyyhkäisy, ei “vahingossa” scrollista
-    const MIN_DIST = 60;      // px
-    const MAX_OFF_AXIS = 80;  // px
-    const MAX_TIME = 700;     // ms
+    const MIN_DIST = 60;
+    const MAX_OFF_AXIS = 80;
+    const MAX_TIME = 700;
 
     if (dt > MAX_TIME) return;
     if (Math.abs(dx) < MIN_DIST) return;
     if (Math.abs(dy) > MAX_OFF_AXIS) return;
 
     if (dx < 0) {
-      // swipe vasemmalle -> seuraava
       goNext();
     } else {
-      // swipe oikealle -> edellinen
       goPrev();
     }
   };
@@ -126,7 +119,6 @@ const { prevLang, nextLang } = useMemo(() => {
 
   return (
     <main className="mainContent">
-      {/* Swipe-alue: laita tähän, jos haluat että pyyhkäisy toimii koko sivulla */}
       <div
         className="rightSidebar"
         onTouchStart={onTouchStart}
@@ -137,17 +129,14 @@ const { prevLang, nextLang } = useMemo(() => {
         </button>
 
         <div className="languageTopGrid">
-          {/* VASEN: KIELI */}
           <div className="languageMainHeader">
             <div className="langHeader">
               <img src={lang.icon} alt="" className="langHeaderIcon" />
               <h1 className="langHeaderTitle">{lang.name}</h1>
             </div>
 
-            <p className="langDescription">{lang.descriptionLong}</p>
+            <p className="langDescription" dangerouslySetInnerHTML={{ __html: lang.descriptionLong }}></p>
           </div>
-
-          {/* OIKEA: KURSSIT */}
           <div className="languageCoursesBlock">
             <h2 className="languageCoursesTitle">{t.languages.coursesTitle}</h2>
 
