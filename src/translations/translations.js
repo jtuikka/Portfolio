@@ -80,7 +80,8 @@ export const translations = {
         javascript: 'Rakennan React-sovelluksia, komponentteja ja pieniä työkaluja.'
       },
       descriptionsLong: {
-        typescript: 'TypeScript on Microsoftin kehittämä ohjelmointikieli, joka laajentaa JavaScriptiä staattisella tyypityksellä. Käytän TypeScriptiä pääasiassa React-projekteissä parantaakseni koodin luettavuutta ja ylläpidettävyyttä. Staattinen tyypitys auttaa havaitsemaan virheitä kehitysvaiheessa ja tekee koodista turvallisempaa. Lisäksi TypeScriptin interface- ja type-ominaisuudet helpottavat monimutkaisten datarakenteiden määrittelyä ja dokumentointia.',
+        typescript: `Minulla on hyvä perustason osaaminen TypeScript-ohjelmointikielestä, jota olen käyttänyt React-sovelluksissa. 
+        TypeScriptin avulla pystyn kirjoittamaan tyypitettyä koodia, mikä parantaa koodin luettavuutta ja ylläpidettävyyttä.`,
         python: `Minulla on monipuolinen osaaminen Python-ohjelmoinnissa, jota olen kehittänyt sekä kurssien että käytännön projektien kautta. Ohjelmoinnin alkeet -kurssilla olen 
           oppinut Pythonin perusteet, kuten muuttujat, ehtorakenteet, silmukat ja funktiot, sekä hyvän ohjelmointikäytännön merkityksen.<br><br>
 
@@ -104,14 +105,28 @@ export const translations = {
 
           Kurssiin sisältynyt Tamacochi-projekti on tarjonnut käytännön kokemusta C-ohjelmoinnin soveltamisesta projektimuotoisesti: olen toteuttanut täysin toimivan ohjelman alusta loppuun, 
           suunnitellut sen ohjelma-arkkitehtuurin, hyödyntänyt tehokkaita tietorakenteita ja hallinnut ohjelman tilaa dynaamisesti yhdessä ryhmän kanssa. Projektissa olen myös harjoitellut virheiden etsintää (debugging) osana kehitysprosessia.`,
-        csharp: 'C# on Microsoftin kehittämä moderni, objektiorientoitunut ohjelmointikieli. Käytän C#:ia ensisijaisesti Unity-pelimoottorin kanssa pelikehityksessä. Kielen syntaksi on selkeä ja se tarjoaa erinomaisia työkaluja pelimekaniikoiden toteuttamiseen. Olen kehittänyt C#:lla useita VR- ja XR-projekteja, joissa hyödynnän Unityn ominaisuuksia ja C#:n tehokasta toiminnallisuutta. C# on opettanut minulle paljon tapahtumankäsittelystä, asynkronisesta ohjelmoinnista ja komponenttipohjaisesta suunnittelusta.',
-        sql: 'SQL (Structured Query Language) on tietokantojen hallintaan ja kyselyiden tekemiseen tarkoitettu kieli. Olen käyttänyt SQL:ää relaatiotietokantojen suunnitteluun ja hallintaan useissa projekteissa. Osaan kirjoittaa tehokkaita kyselyitä tiedon hakemiseen, muokkaamiseen ja analysointiin. SQL:n ymmärtäminen on ollut tärkeää web-sovellusten backend-kehityksessä, missä tietokannan tehokas käyttö on kriittistä sovelluksen suorituskyvylle.',
-        kotlin: 'Kotlin on moderni ohjelmointikieli, joka toimii JVM:llä ja on erityisen suosittu Android-sovelluskehityksessä. Olen käyttänyt Kotlinia mobiilisovellusten kehityksessä Android Studio -ympäristössä. Kielen tiivis syntaksi ja null-turvallisuus tekevät koodista vähemmän virhealtista verrattuna perinteiseen Javaan. Kotlin on myös täysin yhteensopiva Javan kanssa, mikä helpottaa olemassa olevan koodin integrointia.',
-        react: 'React on Facebookin kehittämä JavaScript-kirjasto käyttöliittymien rakentamiseen. Käytän Reactia modernien, responsiivisten web-sovellusten kehityksessä. Reactin komponenttipohjainen arkkitehtuuri tekee koodista modulaarista ja uudelleenkäytettävää. Olen tutustunut myös React Hookseihin, state managementiin ja React Routeriin. React on yksi tärkeimmistä työkaluistani web-kehityksessä.',
-        reactnative: 'React Native on Facebookin kehittämä framework mobiilisovellusten rakentamiseen käyttäen Reactia. Olen käyttänyt React Nativea natiivien mobiilisovellusten kehitykseen, jotka toimivat sekä iOS:llä että Androidilla. React Nativen avulla pystyn hyödyntämään Reactin komponenttipohjaista lähestymistapaa mobiilikehityksessä, mikä nopeuttaa kehitysprosessia. Olen toteuttanut useita pienempiä sovelluksia React Nativella, joissa hyödynnän sen kykyä käyttää natiivikomponentteja ja -ominaisuuksia.',
-        html: 'HTML (HyperText Markup Language) on web-sivujen rakenteen määrittelevä merkintäkieli. HTML on kaiken web-kehityksen perusta, ja osaan käyttää sitä semanttisesti oikein modernien verkkosovellusten rakentamiseen. Ymmärrän HTML5:n uudet ominaisuudet kuten semantic tagit, formit ja multimedian upotuksen. HTML-osaaminen yhdistettynä CSS:ään ja JavaScriptiin mahdollistaa monipuolisten web-sovellusten kehittämisen.',
-        css: 'CSS (Cascading Style Sheets) on tyylittelykieli, jolla määritellään web-sivujen ulkoasu ja layout. Hallitsen CSS:n perusteet ja modernit ominaisuudet kuten Flexbox, Grid ja animaatiot. Osaan luoda responsiivisia käyttöliittymiä, jotka toimivat eri laitteilla. Ymmärrän myös CSS-preprocessorien kuten Sassin käytön ja CSS-in-JS -ratkaisut React-projekteissa.',
-        javascript: 'JavaScript on web-kehityksen keskeinen ohjelmointikieli, joka mahdollistaa interaktiiviset ja dynaamiset verkkosivut. Käytän JavaScriptiä sekä frontend- että backend-kehityksessä. Hallitsen modernin ES6+ -syntaksin ja asynkronisen ohjelmoinnin promiseilla ja async/await-rakenteilla. JavaScript on tärkeä työkalu minulle, ja käytän sitä päivittäin React-sovellusten kehityksessä. Ymmärrän myös Node.js-ympäristön ja npm-ekosysteemin.'
+        csharp: `Käytän C# -ohjelmointikieltä pääasiassa Unity-pelimoottorissa pelien kehittämiseen. Olen toteuttanut useita projekteja, joissa olen hyödyntänyt C#:n olio-ohjelmoinnin ominaisuuksia pelimekaniikkojen, 
+          käyttöliittymien ja pelilogiikan rakentamiseen. <br><br>
+          Unityn kanssa työskentely on syventänyt ymmärrystäni pelinkehityksen prosesseista, kuten pelisilmukoista, tapahtumien käsittelystä ja resurssien hallinnasta.
+          Olen toteuttanut erityisesti XR- ja VR-projekteja, joissa C# on ollut keskeinen työkalu immersiivisten kokemusten luomiseen. <br><br>
+          `,
+        sql: `Minulta löytyy perustason osaaminen SQL-kyselykielestä, jota olen käyttänyt relaatiotietokantojen kanssa työskentelyssä. Osaan kirjoittaa 
+        peruskyselyjä tietojen hakemiseen, lisäämiseen, päivittämiseen ja poistamiseen. Ymmärrän myös relaatiotietokantojen rakenteen ja peruskäsitteet, kuten taulut, rivit, sarakkeet ja avaimet. 
+        Olen käyttänys SQL:ää osana projekteja, joissa tarvitaan tietojen tallentamista ja hakemista tehokkaasti. Minulta löytyy perustiedot tietokantasuunnittelusta ja normalisoinnista.`,
+        kotlin: ``,
+        react: `Minulta löytyy hyvä osaaminen Reactista ja moderneista frontend-kehityksen käytännöistä. Olen käyttänyt Reactia projekteissa,
+         joissa olen rakentanut interaktiivisia web-sovelluksia komponenttipohjaisella lähestymistavalla. Osaan käyttää React Hooks-ominaisuuksia, kuten useState ja useEffect.
+         React Routerin avulla olen toteuttanut monisivuisia sovelluksia ja hallinnut reititystä sujuvasti. <br><br>
+          Tilanhallinnassa olen käyttänyt Context API:a, esimerkiksi kiellisten asetusten hallintaan sovelluksessa. Ymmärrän komponenttien uudelleenkäytön merkityksen ja osaan rakentaa modulaarisia käyttöliittymiä. 
+          Osaan kehittää monikielisiä sovelluksia ja erottaa sisällön logiikasta tehokkaasti. Lisäksi tunnen React-ekosysteemin työkaluja, kuten Vite, jotka helpottavat projektien käynnistämistä ja hallintaa.`,
+        reactnative: `Minulta löytyy perustason osaaminen React Native -sovelluskehityksestä, jota olen kehittänyt itseopiskelun kautta. Osaan rakentaa perusmobiilisovelluksia React Native -komponenttien avulla, hyödyntäen Reactin komponenttipohjaista arkkitehtuuria.
+        Osaan hyödyntää Expo-alustaa sovellusten kehityksessä, mikä helpottaa sovellusten rakentamista, testaamista ja jakelua eri laitteille. <br><br>`,
+        html: `Hallitsen HTML:n perusteet ja osaan luoda semanttisesti oikein jäsenneltyjä web-sivuja. Osaan luoda erilaisia HTML-elementtejä, kuten otsikoita, kappaleita, linkkejä, kuvia ja lomakkeita. Ymmärrän HTML:n roolin web-sivujen rakenteen määrittelyssä
+         ja osaan käyttää sitä yhdessä CSS:n ja JavaScriptin kanssa toimivien verkkosivujen rakentamiseen. Ymmärrän myös saavutettavuuden periaatteet ja rakenteen merkityksen.`,
+        css: `Hallitsen CSS:n perusteet ja osaan luoda tyylikkäitä ja responsiivisia käyttöliittymiä. Osaan käyttää moderneja CSS-tekniikoita kuten Flexboxia ja Grid-layoutia. Ymmärrän CSS:n roolin web-sivujen ulkoasun määrittelyssä
+         ja osaan yhdistää sen HTML:n ja JavaScriptin kanssa toimivien verkkosivujen rakentamiseen. Ymmärrän myös saavutettavuuden periaatteet tyylittelyssä. Osaan toteuttaa responsiivisia suunnittelumalleja käyttämällä media queryjä.`,
+        javascript: `Minulla on hyvä osaaminen JavaScriptistä, jota olen kehittänyt useiden kurssien ja projektien kautta. Ohjelmointi 4 -kurssilla opin JavaScriptin perusteet, kuten syntaksin, muuttujat, funktiot ja objektit.
+        Minulla on kokemusta JavaScriptin käytöstä web-sovelluksissa, erityisesti React-kirjaston kanssa. Osaan rakentaa interaktiivisia käyttöliittymiä, hallita komponenttien tilaa ja käsitellä tapahtumia.`
       },
       courses: {
         typescript: ['Itse opiskeltu'],
@@ -146,14 +161,14 @@ export const translations = {
         mobileComputingApp: 'Mobiilisovellusohjelmointi',
         tamagotchi: 'Tamagotchi-projekti',
         XRGame: 'XR-peli',
-        financeTrackerWeb: 'Budjetointisovellus',
-        iotWeatherStation: 'IoT-sääasema',
+        financeTrackerWeb: 'Taloudenhallintasovellus',
+        iotWeatherStation: 'IoT-sisätilasääasema',
         tira: 'Tira-harjoitustyö',
-        NLPproject: 'NLP-projekti',
+        NLPproject: 'NLP-suomi24-analyysi',
         csMarketTool: 'CS-markkinatyökalu',
         HeightScale: 'HeightScale-sovellus',
         minesweeper: 'Miinaharava',
-        threeDenvGame: '3D-ympäristöpeli',
+        threeDenvGame: '3D-ympäristö peli',
         VRbeerPong: 'VR Beer Pong'
       },
       descriptions: {
@@ -275,18 +290,92 @@ export const translations = {
         javascript: 'Building React applications, components, and small tools.'
       },
       descriptionsLong: {
-        typescript: 'TypeScript is a programming language developed by Microsoft that extends JavaScript with static typing. I primarily use TypeScript in React projects to improve code readability and maintainability. Static typing helps catch errors during development and makes code safer. Additionally, TypeScript\'s interface and type features facilitate the definition and documentation of complex data structures.',
-        python: 'Python is a versatile, high-level programming language known for its clear syntax and extensive library ecosystem. I use Python especially for scripting, automation, and data processing. The language\'s simplicity makes it an excellent tool for building rapid prototypes. I have used Python in various projects ranging from data processing to web scraping and machine learning fundamentals.',
-        java: 'Java is an object-oriented programming language known for its reliability and platform independence. I studied Java at university and used it in numerous school projects, particularly for learning data structures and algorithms. Java has taught me strong fundamentals in object-oriented programming, design patterns, and software architecture. I have also built GUI applications with Java using Swing and JavaFX libraries.',
-        c: 'C is a low-level programming language that provides direct access to hardware resources and excellent performance. I have used C primarily in embedded systems programming, especially in microcontroller projects like the Tamagotchi game. Understanding C has helped me comprehend memory management and computer operation at a deeper level. The language is demanding but rewarding, and it has taught me important principles about efficiency and resource management.',
-        csharp: 'C# is a modern, object-oriented programming language developed by Microsoft. I use C# primarily with the Unity game engine in game development. The language\'s syntax is clear and it offers excellent tools for implementing game mechanics. I have developed several VR and XR projects with C#, utilizing Unity\'s features and C#\'s powerful functionality. C# has taught me a lot about event handling, asynchronous programming, and component-based design.',
-        sql: 'SQL (Structured Query Language) is a language designed for database management and querying. I have used SQL for designing and managing relational databases in several projects. I can write efficient queries for retrieving, modifying, and analyzing data. Understanding SQL has been important in backend development of web applications, where efficient database usage is critical for application performance.',
-        kotlin: 'Kotlin is a modern programming language that runs on the JVM and is particularly popular in Android application development. I have used Kotlin in mobile application development with Android Studio environment. The language\'s concise syntax and null safety make code less error-prone compared to traditional Java. Kotlin is also fully interoperable with Java, which facilitates integration of existing code.',
-        react: 'React is a JavaScript library developed by Facebook for building user interfaces. I use React to develop modern, responsive web applications. React\'s component-based architecture makes code modular and reusable. I have also become familiar with React Hooks, state management, and React Router. React is one of my most important tools in web development.',
-        reactnative: 'React Native is a framework developed by Facebook for building mobile applications using React. I have used React Native for developing native mobile applications that run on both iOS and Android. React Native allows me to leverage React\'s component-based approach in mobile development, speeding up the development process. I have implemented several smaller applications with React Native, utilizing its ability to use native components and features.',
-        html: 'HTML (HyperText Markup Language) is a markup language that defines the structure of web pages. HTML is the foundation of all web development, and I can use it semantically correctly to build modern web applications. I understand HTML5\'s new features such as semantic tags, forms, and multimedia embedding. HTML knowledge combined with CSS and JavaScript enables the development of versatile web applications.',
-        css: 'CSS (Cascading Style Sheets) is a styling language used to define the appearance and layout of web pages. I master CSS fundamentals and modern features like Flexbox, Grid, and animations. I can create responsive user interfaces that work across different devices. I also understand the use of CSS preprocessors like Sass and CSS-in-JS solutions in React projects.',
-        javascript: 'JavaScript is the central programming language of web development, enabling interactive and dynamic websites. I use JavaScript in both frontend and backend development. I master modern ES6+ syntax and asynchronous programming with promises and async/await constructs. JavaScript is an important tool for me, and I use it daily in React application development. I also understand the Node.js environment and npm ecosystem.'
+        typescript: `I have a solid foundational understanding of TypeScript, which I have used in React applications.
+        TypeScript enables me to write strongly typed code, improving code readability, maintainability, and reliability.`,
+
+        python: `I have versatile experience in Python programming, developed through both coursework and practical projects.
+        In the Introduction to Programming course, I learned Python fundamentals such as variables, control structures,
+        loops, functions, and the principles of good programming practices.<br><br>
+
+        Based on the Natural Language Processing and Text Mining course, I implemented an NLP project where I analyzed and
+        processed textual data using Python libraries. The project focused on text preprocessing, analysis, and result
+        interpretation, strengthening my understanding of data-driven programming.<br><br>
+
+        In the Internet of Things course, I worked in a team to build a Raspberry Pi-based IoT weather station that collects
+        and visualizes weather data. The project combined Python programming, hardware control, sensor data processing, and
+        presenting data in a user-friendly format. <br><br>
+
+        Through these courses and projects, I have learned to apply Python to real-world problem solving, work with various
+        libraries, and develop clear and functional software solutions.`,
+
+        java: `I have strong experience in Java programming, developed through multiple courses and projects.
+        In the Programming 2 course, I learned Java fundamentals, including syntax, object-oriented programming principles,
+        and core language structures. The course strengthened my ability to write clean, maintainable, and robust code.<br><br>
+
+        In the Data Structures and Algorithms course, I deepened my expertise by focusing on efficient data structures such as
+        lists, stacks, queues, and trees, as well as algorithms for sorting and searching. I learned to analyze time
+        complexity and select the most appropriate solutions for different problems.<br><br>
+
+        In the Programming 3 course, I studied more advanced Java concepts, including multithreading, file handling, and
+        error handling. Through these courses, I have developed the ability to design and implement more complex software
+        solutions using Java.`,
+
+        c: `The Computer Systems course has deepened my understanding of computer architecture and programming in C,
+        including key concepts such as data types, pointers, memory management, and CPU and binary computation principles.
+        Through this course, I learned to write, compile, and debug C code in environments where resource management and
+        performance are critical.<br><br>
+
+        The course included a Tamagotchi-style project that provided hands-on experience in applying C programming in a
+        project-based setting. I participated in developing a fully functional program from start to finish, designing
+        the software architecture, utilizing efficient data structures, and managing program state dynamically as part of
+        a team. The project also strengthened my debugging skills as an integral part of the development process.`,
+
+        csharp: `I primarily use C# in the Unity game engine for game development. I have implemented multiple projects
+        utilizing C#'s object-oriented programming features to build game mechanics, user interfaces, and core gameplay
+        logic.<br><br>
+
+        Working with Unity has deepened my understanding of game development processes, such as game loops, event handling,
+        and resource management. I have particularly focused on XR and VR projects, where C# has been a key tool in creating
+        immersive interactive experiences.<br><br>`,
+
+        sql: `I have foundational knowledge of SQL, which I have used when working with relational databases.
+        I can write basic queries to retrieve, insert, update, and delete data. I also understand the structure and core
+        concepts of relational databases, including tables, rows, columns, and keys.
+        I have used SQL in projects that require efficient data storage and retrieval, and I have basic knowledge of
+        database design and normalization.`,
+
+        kotlin: ``,
+
+        react: `I have strong experience with React and modern frontend development practices. I have used React in projects
+        where I built interactive web applications using a component-based approach. I am proficient with React Hooks such
+        as useState and useEffect.
+        Using React Router, I have implemented multi-page applications and managed routing effectively.<br><br>
+
+        For state management, I have used the Context API, for example to manage language settings within an application.
+        I understand the importance of component reusability and can build modular, maintainable user interfaces.
+        I have experience developing multilingual applications and separating content from logic efficiently. In addition,
+        I am familiar with tools in the React ecosystem, such as Vite, which streamline project setup and development.`,
+
+        reactnative: `I have foundational experience in React Native application development, developed through self-study.
+        I can build basic mobile applications using React Native components while leveraging React's component-based
+        architecture.
+        I am familiar with the Expo platform, which simplifies application development, testing, and deployment across
+        different devices.<br><br>`,
+
+        html: `I have a solid understanding of HTML fundamentals and can create semantically structured web pages.
+        I can build various HTML elements such as headings, paragraphs, links, images, and forms. I understand HTML's role
+        in defining the structure of web pages and can use it together with CSS and JavaScript to build functional websites.
+        I also understand accessibility principles and the importance of semantic structure.`,
+
+        css: `I have strong foundational knowledge of CSS and can create visually appealing and responsive user interfaces.
+        I am comfortable using modern CSS techniques such as Flexbox and Grid layouts. I understand CSS's role in defining
+        the visual presentation of web pages and can integrate it effectively with HTML and JavaScript.
+        I also understand accessibility considerations in styling and can implement responsive designs using media queries.`,
+
+        javascript: `I have strong proficiency in JavaScript, developed through multiple courses and projects.
+        In the Programming 4 course, I learned JavaScript fundamentals such as syntax, variables, functions, and objects.
+        I have experience using JavaScript in web applications, particularly with the React library.
+        I can build interactive user interfaces, manage component state, and handle user events effectively.`
       },
       courses: {
         typescript: ['Self-studied'],
@@ -322,9 +411,9 @@ export const translations = {
         tamagotchi: 'Tamagotchi Project',
         XRGame: 'XR Game',
         financeTrackerWeb: 'Finance Tracker',
-        iotWeatherStation: 'IoT Weather Station',
+        iotWeatherStation: 'IoT Indoor Weather Station',
         tira: 'Data Structures Project',
-        NLPproject: 'NLP Project',
+        NLPproject: 'NLP Suomi24 Analysis',
         csMarketTool: 'CS Market Tool',
         HeightScale: 'HeightScale App',
         minesweeper: 'Minesweeper',
