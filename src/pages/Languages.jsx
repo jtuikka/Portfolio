@@ -31,11 +31,11 @@ export default function Languages() {
             key={lang.id}
             to={`/languages/${slugify(lang.id)}`}
             className="languageCard"
-            aria-label={`Open ${lang.id}`}
+            aria-label={`${t.common.open} ${lang.id}`}
           >
             <img
               src={lang.icon}
-              alt={`${lang.name} icon`}
+              alt={`${lang.name} ${t.common.icon}`}
               className="languageIcon"
               loading="lazy"
             />
@@ -56,7 +56,7 @@ export default function Languages() {
               key={project.id} 
               to={`/projects/${project.id}`}
               className="projectCard"
-              aria-label={`Open ${project.name}`}
+              aria-label={`${t.common.open} ${project.name}`}
             >
               <div className="projectHeader">
                 <div className="projectName">{project.name}</div>
@@ -65,7 +65,7 @@ export default function Languages() {
               </div>
 
               <div className="projectFooter">
-                <div className="projectTechRow" aria-label={`${project.name} technologies`}>
+                <div className="projectTechRow" aria-label={`${project.name} ${t.common.technologies}`}>
                   {project.technologies.map((tech) => {
                     const icon = techIconBySlug[slugify(tech)];
                     if (!icon) return null;
@@ -73,7 +73,7 @@ export default function Languages() {
                       <img
                         key={tech}
                         src={icon}
-                        alt={`${tech} icon`}
+                        alt={`${tech} ${t.common.icon}`}
                         className="projectTechIcon"
                         loading="lazy"
                         title={tech}

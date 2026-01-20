@@ -16,13 +16,13 @@ export default function Home() {
         <aside className="leftSidebar">
           <div className="profileImage"></div>
           <div className="nameText">
-            <p>Janne Tuikka</p>
+            <p>{t.common.name}</p>
           </div>
           <div className="profileText">
             <p>{t.home.degree}</p>
           </div>
           <div className="contactActions">
-            <a className="contactBtn contactBtn--reveal" href="tel:+358401234567">
+            <a className="contactBtn contactBtn--reveal" href={`tel:${t.home.phoneNumber.replace(/\s/g, '')}`}>
               <span className="contactLabel">
                 <span className="contactIcon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="16" height="16">
@@ -32,12 +32,12 @@ export default function Home() {
                     />
                   </svg>
                 </span>
-                Phone
+                {t.home.phone}
               </span>
-              <span className="contactValue">+358 44 317 6026</span>
+              <span className="contactValue">{t.home.phoneNumber}</span>
             </a>
 
-            <a className="contactBtn contactBtn--reveal" href="mailto:janne.e.tuikka@gmail.com">
+            <a className="contactBtn contactBtn--reveal" href={`mailto:${t.home.emailAddress}`}>
               <span className="contactLabel">
                 <span className="contactIcon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" width="16" height="16">
@@ -47,9 +47,9 @@ export default function Home() {
                     />
                   </svg>
                 </span>
-                Email
+                {t.home.email}
               </span>
-              <span className="contactValue">janne.e.tuikka@gmail.com</span>
+              <span className="contactValue">{t.home.emailAddress}</span>
             </a>
 
             <a
@@ -67,7 +67,7 @@ export default function Home() {
                     />
                   </svg>
                 </span>
-                GitHub
+                {t.home.github}
               </span>
             </a>
 
@@ -86,7 +86,7 @@ export default function Home() {
                     />
                   </svg>
                 </span>
-                LinkedIn
+                {t.home.linkedin}
               </span>
             </a>
           </div>
@@ -115,7 +115,7 @@ export default function Home() {
                 <div className="toolMeta">
                   <img
                     src={tool.icon}
-                    alt={`${tool.name} logo`}
+                    alt={`${tool.name} ${t.common.logo}`}
                     className="toolIcon"
                     loading="lazy"
                   />

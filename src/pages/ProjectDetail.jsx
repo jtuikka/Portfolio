@@ -130,10 +130,10 @@ export default function ProjectDetail() {
     return (
       <main className="mainContent">
         <div className="rightSidebar">
-          <h1>Not found</h1>
-          <p>Tätä projektia ei löytynyt.</p>
+          <h1>{t.projects.notFound}</h1>
+          <p>{t.projects.projectNotFound}</p>
           <button className="backLink" type="button" onClick={handleBack}>
-            ← Back
+            ← {t.languages.back}
           </button>
         </div>
       </main>
@@ -195,7 +195,7 @@ export default function ProjectDetail() {
           {/* VASEN */}
           <div className="projectMainHeader">
             <h1 className="projectDetailTitle">{project.name}</h1>
-            <p className="projectDetailDescription">{project.description}</p>
+            <p className="projectDetailDescription">{project.descriptionLong}</p>
 
             {/* ✅ Git-linkki vain jos löytyy */}
             {project.link ? (
@@ -207,19 +207,30 @@ export default function ProjectDetail() {
               >
                 <img
                   src="https://github.com/github/docs/raw/main/assets/images/site/favicon.ico"
-                  alt="GitHub"
+                  alt={t.home.github}
                   className="projectGitIcon"
                 />
-                Katso GitHubissa
+                {t.projects.viewOnGithub}
               </a>
             ) : null}
+
+            {project.thesis_link && (
+              <a
+                className="projectGitButton"
+                href={project.thesis_link}
+                target="_blank"
+                rel="noreferrer"
+              >
+                📄 {t.projects.readThesis}
+              </a>
+            )}
           </div>
 
           {/* OIKEA */}
           <div className="projectTechBlock">
-            <h2 className="projectTechTitle">{t.languages.toolsTitle ?? "Teknologiat"}</h2>
+            <h2 className="projectTechTitle">{t.projects.technologies}</h2>
 
-            <div className="projectTechRow" aria-label={`${project.name} technologies`}>
+            <div className="projectTechRow" aria-label={`${project.name} ${t.common.technologies}`}>
               {(project.technologies || []).map((tech) => {
                 const data = techBySlug[slugify(tech)];
 
@@ -250,7 +261,7 @@ export default function ProjectDetail() {
         {/* ✅ Media vain jos sitä on */}
         {(videos.length > 0 || images.length > 0) ? (
           <section className="projectMediaSection">
-            <h2 className="projectMediaTitle">{t.projects?.mediaTitle ?? "Media"}</h2>
+            <h2 className="projectMediaTitle">{t.projects.mediaTitle}</h2>
 
             {/* Videot */}
             {videos.length > 0 ? (
@@ -278,7 +289,7 @@ export default function ProjectDetail() {
                     return (
                       <video key={url} className="projectMediaVideo" controls>
                         <source src={url} />
-                        Your browser does not support the video tag.
+                        {t.projects.videoNotSupported}
                       </video>
                     );
                   }
@@ -286,7 +297,7 @@ export default function ProjectDetail() {
                   // muu videolinkki (esim. vimeo tms) -> linkkinä
                   return (
                     <a key={url} className="projectGitLink" href={url} target="_blank" rel="noreferrer">
-                      Video →
+                      {t.projects.videoLink} →
                     </a>
                   );
                 })}
@@ -300,7 +311,7 @@ export default function ProjectDetail() {
                   <img
                     key={url}
                     src={url}
-                    alt="Project media"
+                    alt={t.projects.projectMediaAlt}
                     className="projectMediaImage"
                     loading="lazy"
                   />

@@ -1,11 +1,14 @@
-// src/components/LanguagesCarousel.jsx
 import { useLayoutEffect, useRef, useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import { useLanguage } from "../context/LanguageContext";
+import { translations } from "../translations/translations";
 import "./languagesCarousel.css";
 
 export default function LanguagesCarousel({ items, speedSeconds = 26 }) {
   const groupRef = useRef(null);
   const [shiftPx, setShiftPx] = useState(0);
+  const { language } = useLanguage();
+  const t = translations[language];
 
   const slugify = (name) => name.toLowerCase().replace(/\s+/g, "-");
   const navigate = useNavigate();
@@ -64,7 +67,7 @@ export default function LanguagesCarousel({ items, speedSeconds = 26 }) {
                   key={`a-${lang.name}`}
                   tabIndex={0}
                   role="link"
-                  aria-label={`Open ${lang.name}`}
+                  aria-label={`${t.common.open} ${lang.name}`}
                   aria-expanded={isOpen} // ADDED: a11y state for expanded tooltip
                   onClick={() => {
                     if (!isTouch) { // ADDED: desktop -> navigate immediately
@@ -87,7 +90,7 @@ export default function LanguagesCarousel({ items, speedSeconds = 26 }) {
                     <img
                       className="langCard__icon"
                       src={lang.icon}
-                      alt={`${lang.name} logo`}
+                      alt={`${lang.name} ${t.common.logo}`}
                       loading="lazy"
                       draggable="false"
                     />

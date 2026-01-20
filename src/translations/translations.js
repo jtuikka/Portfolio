@@ -4,10 +4,23 @@ export const translations = {
       home: 'Etusivu',
       languages: 'Kielet ja projektit'
     },
+    common: {
+      open: 'Avaa',
+      technologies: 'teknologiat',
+      logo: 'logo',
+      icon: 'ikoni',
+      name: 'Janne Tuikka'
+    },
     home: {
       welcomeTitle: 'Tervetuloa portfoliooni!',
       welcomeText: 'Hei! Olen Janne Tuikka, intohimoinen tietotekniikan opiskelija, joka on kiinnostunut ohjelmistokehityksestä ja teknologiasta. Tämä portfolio esittelee projektejani, taitojani ja kokemuksiani alalta. Tutustu vapaasti ja opi lisää matkastani tietotekniikan maailmassa!',
       degree: 'Tietotekniikan kandi',
+      phone: 'Puhelin',
+      email: 'Sähköposti',
+      github: 'GitHub',
+      linkedin: 'LinkedIn',
+      phoneNumber: '+358 44 317 6026',
+      emailAddress: 'janne.e.tuikka@gmail.com',
       programmingLanguagesTitle: 'Ohjelmointikielet',
       toolsTitle: 'Työkalut',
       educationTitle: 'Koulutus',
@@ -45,6 +58,7 @@ export const translations = {
         sql: 'Peruskyselyt, relaatiomallit ja CRUD.',
         kotlin: 'Skriptaus, automaatio ja pieniä datakokeiluja.',
         react: 'Skriptaus, automaatio ja pieniä datakokeiluja.',
+        reactnative: 'Skriptaus, automaatio ja pieniä datakokeiluja.',
         html: 'Unity-projektit, gameplay-logiikka ja XR/VR-kokeilut.',
         css: 'Unity-projektit, gameplay-logiikka ja XR/VR-kokeilut.',
         javascript: 'Rakennan React-sovelluksia, komponentteja ja pieniä työkaluja.'
@@ -58,6 +72,7 @@ export const translations = {
         sql: 'SQL (Structured Query Language) on tietokantojen hallintaan ja kyselyiden tekemiseen tarkoitettu kieli. Olen käyttänyt SQL:ää relaatiotietokantojen suunnitteluun ja hallintaan useissa projekteissa. Osaan kirjoittaa tehokkaita kyselyitä tiedon hakemiseen, muokkaamiseen ja analysointiin. SQL:n ymmärtäminen on ollut tärkeää web-sovellusten backend-kehityksessä, missä tietokannan tehokas käyttö on kriittistä sovelluksen suorituskyvylle.',
         kotlin: 'Kotlin on moderni ohjelmointikieli, joka toimii JVM:llä ja on erityisen suosittu Android-sovelluskehityksessä. Olen käyttänyt Kotlinia mobiilisovellusten kehityksessä Android Studio -ympäristössä. Kielen tiivis syntaksi ja null-turvallisuus tekevät koodista vähemmän virhealtista verrattuna perinteiseen Javaan. Kotlin on myös täysin yhteensopiva Javan kanssa, mikä helpottaa olemassa olevan koodin integrointia.',
         react: 'React on Facebookin kehittämä JavaScript-kirjasto käyttöliittymien rakentamiseen. Käytän Reactia modernien, responsiivisten web-sovellusten kehityksessä. Reactin komponenttipohjainen arkkitehtuuri tekee koodista modulaarista ja uudelleenkäytettävää. Olen tutustunut myös React Hookseihin, state managementiin ja React Routeriin. React on yksi tärkeimmistä työkaluistani web-kehityksessä.',
+        reactnative: 'React Native on Facebookin kehittämä framework mobiilisovellusten rakentamiseen käyttäen Reactia. Olen käyttänyt React Nativea natiivien mobiilisovellusten kehitykseen, jotka toimivat sekä iOS:llä että Androidilla. React Nativen avulla pystyn hyödyntämään Reactin komponenttipohjaista lähestymistapaa mobiilikehityksessä, mikä nopeuttaa kehitysprosessia. Olen toteuttanut useita pienempiä sovelluksia React Nativella, joissa hyödynnän sen kykyä käyttää natiivikomponentteja ja -ominaisuuksia.',
         html: 'HTML (HyperText Markup Language) on web-sivujen rakenteen määrittelevä merkintäkieli. HTML on kaiken web-kehityksen perusta, ja osaan käyttää sitä semanttisesti oikein modernien verkkosovellusten rakentamiseen. Ymmärrän HTML5:n uudet ominaisuudet kuten semantic tagit, formit ja multimedian upotuksen. HTML-osaaminen yhdistettynä CSS:ään ja JavaScriptiin mahdollistaa monipuolisten web-sovellusten kehittämisen.',
         css: 'CSS (Cascading Style Sheets) on tyylittelykieli, jolla määritellään web-sivujen ulkoasu ja layout. Hallitsen CSS:n perusteet ja modernit ominaisuudet kuten Flexbox, Grid ja animaatiot. Osaan luoda responsiivisia käyttöliittymiä, jotka toimivat eri laitteilla. Ymmärrän myös CSS-preprocessorien kuten Sassin käytön ja CSS-in-JS -ratkaisut React-projekteissa.',
         javascript: 'JavaScript on web-kehityksen keskeinen ohjelmointikieli, joka mahdollistaa interaktiiviset ja dynaamiset verkkosivut. Käytän JavaScriptiä sekä frontend- että backend-kehityksessä. Hallitsen modernin ES6+ -syntaksin ja asynkronisen ohjelmoinnin promiseilla ja async/await-rakenteilla. JavaScript on tärkeä työkalu minulle, ja käytän sitä päivittäin React-sovellusten kehityksessä. Ymmärrän myös Node.js-ympäristön ja npm-ekosysteemin.'
@@ -71,6 +86,7 @@ export const translations = {
         sql: ['Tietokannat', 'Web-ohjelmointi', 'Tietokantasuunnittelu'],
         kotlin: ['Mobiiliohjelmointi', 'Android-sovelluskehitys', 'Mobile Computing'],
         react: ['Web-ohjelmoinnin jatko', 'Modern JavaScript', 'Frontend-kehitys'],
+        reactnative: ['Mobiiliohjelmointi', 'React Native -sovelluskehitys'],
         html: ['Web-ohjelmoinnin perusteet', 'Käyttöliittymäsuunnittelu', 'Web-teknologiat'],
         css: ['Web-ohjelmoinnin perusteet', 'Responsiivinen suunnittelu', 'UI/UX-perusteet'],
         javascript: ['Web-ohjelmoinnin perusteet', 'Funktionaalinen ohjelmointi', 'Asynkroninen ohjelmointi', 'Node.js']
@@ -79,6 +95,15 @@ export const translations = {
     projects: {
       school: 'Kouluprojekti',
       personal: 'Henkilökohtainen projekti',
+      notFound: 'Ei löytynyt',
+      projectNotFound: 'Tätä projektia ei löytynyt.',
+      viewOnGithub: 'Katso GitHubissa',
+      readThesis: 'Lue opinnäytetyö',
+      technologies: 'Teknologiat',
+      mediaTitle: 'Media',
+      videoNotSupported: 'Selaimesi ei tue video-tagia.',
+      videoLink: 'Video',
+      projectMediaAlt: 'Projektin media',
       names: {
         BachelorThesis: 'Kandidaatintyö',
         portfolio: 'Portfolio-sivusto',
@@ -110,6 +135,22 @@ export const translations = {
         minesweeper: 'Klassinen miinaharavapeli toteutettuna Pythonilla.',
         threeDenvGame: 'Unity-peliprojekti, jossa kehitettiin kolmiulotteinen peliympäristö.',
         VRbeerPong: 'Virtuaalitodellisuuspeli, jossa pelataan beer pongia VR-ympäristössä.'
+      },
+      descriptionsLong: {
+        BachelorThesis: 'Kandidaatintyössäni kehitettiin virtuaalitodellisuussovellus Unity-pelimoottorilla, joka tutkii käyttäjien vuorovaikutusta immersiivisissä ympäristöissä. Työssä keskityttiin VR-teknologian hyödyntämiseen oppimiskokemusten parantamiseksi. Sovellus suunniteltiin käyttäjäkeskeisesti, ja siinä hyödynnettiin C#-ohjelmointia pelimekaniikkojen toteuttamiseen. Työ sisälsi myös käyttäjätestausta ja suorituskyvyn optimointia VR-laitteille.',
+        portfolio: 'Tämä portfolio-sivusto on rakennettu React-kirjastolla ja se esittelee henkilökohtaisia projektejani, taitojani ja kokemuksiani tietotekniikan alalta. Sivusto on responsiivinen ja sisältää interaktiivisia elementtejä, jotka parantavat käyttäjäkokemusta. Projekti toimi myös oppimiskokemuksena modernien web-teknologioiden, kuten React Routerin ja Styled Componentsin, käytössä.',
+        mobileComputingApp: 'Tässä projektissa kehitettiin Android-sovellus, joka hyödyntää mobiililaitteiden laskenta- ja anturiominaisuuksia. Sovellus kerää dataa laitteen sensoreista ja suorittaa paikallista laskentaa tarjotakseen käyttäjälle reaaliaikaista tietoa. Projektissa käytettiin Kotlin-ohjelmointikieltä ja Android Studio -kehitysympäristöä. Sovellus tarjoaa intuitiivisen käyttöliittymän ja on optimoitu suorituskyvyn ja akun keston suhteen.',
+        tamagotchi: 'Tamagotchi-projekti on C-kielellä toteutettu virtuaalilemmikki, joka toimii mikrokontrollerilla. Pelissä käyttäjä voi hoitaa ja kasvattaa digitaalista lemmikkiään vuorovaikutteisen käyttöliittymän kautta. Projekti opetti minulle paljon sulautettujen järjestelmien ohjelmoinnista, muistinhallinnasta ja reaaliaikaisesta käyttäjävuorovaikutuksesta. Lemmikin tila tallennetaan mikrokontrollerin muistiin, mikä mahdollistaa jatkuvan pelaamisen.',
+        XRGame: 'Tässä projektissa kehitettiin immersiivinen XR-peli Unity-pelimoottorilla, joka hyödyntää virtuaalitodellisuutta pelaajakokemuksen parantamiseksi. Peli sisältää erilaisia pelimekaniikkoja, jotka on suunniteltu erityisesti XR-ympäristö huomioiden. Käytin C#-ohjelmointikieltä pelilogiikan toteuttamiseen ja Unityn XR-työkaluja laitteistojen tukemiseksi. Projekti sisälsi myös käyttäjätestausta ja optimointia sujuvan kokemuksen varmistamiseksi.',
+        financeTrackerWeb: 'Budjetointisovellus on web-pohjainen työkalu, joka auttaa käyttäjiä seuraamaan menojaan ja tulojaan. Sovellus on rakennettu HTML:llä, CSS:llä ja JavaScriptillä, ja se tarjoaa intuitiivisen käyttöliittymän taloustietojen hallintaan. Käyttäjät voivat lisätä, muokata ja poistaa taloustapahtumia sekä tarkastella raportteja menoistaan. Projekti opetti minulle web-kehityksen perusteita ja tietokantojen integrointia.',
+        iotWeatherStation: 'Tässä projektissa kehitettiin IoT-sääasema Raspberry Pi -alustalle, joka kerää ympäristötietoja kuten lämpötila, kosteus ja ilmanpaine. Dataa visualisoidaan reaaliaikaisesti web-käyttöliittymässä, joka on rakennettu Pythonin Flask-frameworkilla. Sääasema hyödyntää erilaisia antureita ja lähettää kerätyn datan pilvipalveluun analysoitavaksi. Projekti tarjosi arvokasta kokemusta IoT-järjestelmien suunnittelusta, anturitekniikoista ja web-kehityksestä.',
+        tira: 'Tira-harjoitustyö on Java-ohjelmointikielellä toteutettu projekti, joka keskittyy tietorakenteiden ja algoritmien soveltamiseen käytännön ongelmiin. Työssä kehitettiin erilaisia tietorakenteita, kuten puita ja linkitettyjä listoja, sekä algoritmeja tehokkaaseen tiedon käsittelyyn. Projekti auttoi minua syventämään ymmärrystäni tietorakenteiden toiminnasta ja niiden optimoinnista suorituskyvyn parantamiseksi.',
+        NLPproject: 'Tässä luonnollisen kielen käsittelyn (NLP) projektissa analysoitiin tekstidataa Pythonin kirjastoilla, kuten NLTK ja spaCy. Projektin tavoitteena oli kehittää työkaluja tekstin esikäsittelyyn, kuten tokenisointiin, lemmatisointiin ja osittain merkityksen tunnistamiseen. Analysoitu data auttoi ymmärtämään tekstin rakenteita ja merkityksiä, mikä on hyödyllistä monissa sovelluksissa, kuten sentimenttianalyysissä ja chatboteissa.',
+        csMarketTool: 'CS-markkinatyökalu on automatisoitu sovellus, joka analysoi Counter-Strike-pelin markkinadataa tarjotakseen käyttäjille hyödyllisiä osto- ja myyntivinkkejä. Työkalu kerää reaaliaikaista dataa pelin sisäisiltä markkinoilta ja käyttää tilastollisia menetelmiä hintojen ennustamiseen. Projekti on toteutettu Pythonilla ja se hyödyntää web-skrappausta sekä data-analytiikkaa.',
+        HeightScale: 'HeightScale on React Native -sovellus, joka mittaa käyttäjän pituuden puhelimen kameran avulla. Sovellus käyttää koneoppimismalleja arvioidakseen pituuden visuaalisen datan perusteella. Projekti tarjoaa käyttäjille helpon tavan mitata pituutensa ilman erillisiä mittavälineitä. Sovellus on optimoitu mobiililaitteille ja tarjoaa intuitiivisen käyttöliittymän.',
+        minesweeper: 'Miinaharava on klassinen peli, joka on toteutettu Python-ohjelmointikielellä. Pelissä pelaajan tehtävänä on löytää kaikki miinat pelilaudalta ilman, että ne räjähtävät. Projekti sisältää pelilogiikan, käyttöliittymän ja satunnaisen miinojen sijoittelun. Miinaharava-projekti auttoi minua ymmärtämään pelisuunnittelun perusteita ja Pythonin käyttöä interaktiivisten sovellusten kehittämisessä.',
+        threeDenvGame: 'Tässä Unity-peliprojektissa kehitettiin kolmiulotteinen peliympäristö, jossa pelaajat voivat tutkia ja vuorovaikuttaa erilaisissa maisemissa. Projekti sisälsi maastonmuodostuksen, valaistuksen ja pelimekaniikkojen toteuttamisen C#-kielellä. Peli tarjoaa immersiivisen kokemuksen, jossa pelaajat voivat kokea 3D-ympäristön tarjoamat haasteet ja seikkailut.',
+        VRbeerPong: 'VR Beer Pong on virtuaalitodellisuuspeli, jossa pelaajat voivat pelata beer pongia immersiivisessä VR-ympäristössä. Peli on kehitetty Unity-pelimoottorilla ja se hyödyntää VR-laitteiden tarjoamia mahdollisuuksia realistisen pelikokemuksen luomiseksi. Projekti sisälsi pelilogiikan, fysiikan simuloinnin ja käyttäjävuorovaikutuksen toteuttamisen C#-kielellä.'  
       }
     }
   },
@@ -118,10 +159,23 @@ export const translations = {
       home: 'Home',
       languages: 'Languages & Projects'
     },
+    common: {
+      open: 'Open',
+      technologies: 'technologies',
+      logo: 'logo',
+      icon: 'icon',
+      name: 'Janne Tuikka'
+    },
     home: {
       welcomeTitle: 'Welcome to my portfolio!',
       welcomeText: 'Hello! I\'m Janne Tuikka, a passionate computer science and engineering student with a keen interest in software development and technology. This portfolio showcases my projects, skills, and experiences in the field. Feel free to explore and learn more about my journey in the world of computer science!',
       degree: 'Bachelor of Computer Science and Engineering',
+      phone: 'Phone',
+      email: 'Email',
+      github: 'GitHub',
+      linkedin: 'LinkedIn',
+      phoneNumber: '+358 44 317 6026',
+      emailAddress: 'janne.e.tuikka@gmail.com',
       programmingLanguagesTitle: 'Programming Languages',
       toolsTitle: 'Tools',
       educationTitle: 'Education',
@@ -159,6 +213,7 @@ export const translations = {
         sql: 'Basic queries, relational models, and CRUD.',
         kotlin: 'Scripting, automation, and small data experiments.',
         react: 'Scripting, automation, and small data experiments.',
+        reactnative: 'Scripting, automation, and small data experiments.',
         html: 'Unity projects, gameplay logic, and XR/VR experiments.',
         css: 'Unity projects, gameplay logic, and XR/VR experiments.',
         javascript: 'Building React applications, components, and small tools.'
@@ -172,6 +227,7 @@ export const translations = {
         sql: 'SQL (Structured Query Language) is a language designed for database management and querying. I have used SQL for designing and managing relational databases in several projects. I can write efficient queries for retrieving, modifying, and analyzing data. Understanding SQL has been important in backend development of web applications, where efficient database usage is critical for application performance.',
         kotlin: 'Kotlin is a modern programming language that runs on the JVM and is particularly popular in Android application development. I have used Kotlin in mobile application development with Android Studio environment. The language\'s concise syntax and null safety make code less error-prone compared to traditional Java. Kotlin is also fully interoperable with Java, which facilitates integration of existing code.',
         react: 'React is a JavaScript library developed by Facebook for building user interfaces. I use React to develop modern, responsive web applications. React\'s component-based architecture makes code modular and reusable. I have also become familiar with React Hooks, state management, and React Router. React is one of my most important tools in web development.',
+        reactnative: 'React Native is a framework developed by Facebook for building mobile applications using React. I have used React Native for developing native mobile applications that run on both iOS and Android. React Native allows me to leverage React\'s component-based approach in mobile development, speeding up the development process. I have implemented several smaller applications with React Native, utilizing its ability to use native components and features.',
         html: 'HTML (HyperText Markup Language) is a markup language that defines the structure of web pages. HTML is the foundation of all web development, and I can use it semantically correctly to build modern web applications. I understand HTML5\'s new features such as semantic tags, forms, and multimedia embedding. HTML knowledge combined with CSS and JavaScript enables the development of versatile web applications.',
         css: 'CSS (Cascading Style Sheets) is a styling language used to define the appearance and layout of web pages. I master CSS fundamentals and modern features like Flexbox, Grid, and animations. I can create responsive user interfaces that work across different devices. I also understand the use of CSS preprocessors like Sass and CSS-in-JS solutions in React projects.',
         javascript: 'JavaScript is the central programming language of web development, enabling interactive and dynamic websites. I use JavaScript in both frontend and backend development. I master modern ES6+ syntax and asynchronous programming with promises and async/await constructs. JavaScript is an important tool for me, and I use it daily in React application development. I also understand the Node.js environment and npm ecosystem.'
@@ -185,6 +241,7 @@ export const translations = {
         sql: ['Databases', 'Web Programming', 'Database Design'],
         kotlin: ['Mobile Programming', 'Android Application Development', 'Mobile Computing'],
         react: ['Advanced Web Programming', 'Modern JavaScript', 'Frontend Development'],
+        reactnative: ['Mobile Programming', 'React Native Application Development'],
         html: ['Web Programming Fundamentals', 'User Interface Design', 'Web Technologies'],
         css: ['Web Programming Fundamentals', 'Responsive Design', 'UI/UX Basics'],
         javascript: ['Web Programming Fundamentals', 'Functional Programming', 'Asynchronous Programming', 'Node.js']
@@ -193,6 +250,15 @@ export const translations = {
     projects: {
       school: 'School Project',
       personal: 'Personal Project',
+      notFound: 'Not found',
+      projectNotFound: 'This project was not found.',
+      viewOnGithub: 'View on GitHub',
+      readThesis: 'Read thesis',
+      technologies: 'Technologies',
+      mediaTitle: 'Media',
+      videoNotSupported: 'Your browser does not support the video tag.',
+      videoLink: 'Video',
+      projectMediaAlt: 'Project media',
       names: {
         BachelorThesis: 'Bachelor Thesis',
         portfolio: 'Portfolio Website',
@@ -224,6 +290,22 @@ export const translations = {
         minesweeper: 'Classic minesweeper game implemented in Python.',
         threeDenvGame: 'Unity game project developing a three-dimensional game environment.',
         VRbeerPong: 'Virtual reality game playing beer pong in VR environment.'
+      },
+      descriptionsLong: {
+        BachelorThesis: 'Kandidaatintyössäni kehitettiin virtuaalitodellisuussovellus Unity-pelimoottorilla, joka tutkii käyttäjien vuorovaikutusta immersiivisissä ympäristöissä. Työssä keskityttiin VR-teknologian hyödyntämiseen oppimiskokemusten parantamiseksi. Sovellus suunniteltiin käyttäjäkeskeisesti, ja siinä hyödynnettiin C#-ohjelmointia pelimekaniikkojen toteuttamiseen. Työ sisälsi myös käyttäjätestausta ja suorituskyvyn optimointia VR-laitteille.',
+        portfolio: 'Tämä portfolio-sivusto on rakennettu React-kirjastolla ja se esittelee henkilökohtaisia projektejani, taitojani ja kokemuksiani tietotekniikan alalta. Sivusto on responsiivinen ja sisältää interaktiivisia elementtejä, jotka parantavat käyttäjäkokemusta. Projekti toimi myös oppimiskokemuksena modernien web-teknologioiden, kuten React Routerin ja Styled Componentsin, käytössä.',
+        mobileComputingApp: 'Tässä projektissa kehitettiin Android-sovellus, joka hyödyntää mobiililaitteiden laskenta- ja anturiominaisuuksia. Sovellus kerää dataa laitteen sensoreista ja suorittaa paikallista laskentaa tarjotakseen käyttäjälle reaaliaikaista tietoa. Projektissa käytettiin Kotlin-ohjelmointikieltä ja Android Studio -kehitysympäristöä. Sovellus tarjoaa intuitiivisen käyttöliittymän ja on optimoitu suorituskyvyn ja akun keston suhteen.',
+        tamagotchi: 'Tamagotchi-projekti on C-kielellä toteutettu virtuaalilemmikki, joka toimii mikrokontrollerilla. Pelissä käyttäjä voi hoitaa ja kasvattaa digitaalista lemmikkiään vuorovaikutteisen käyttöliittymän kautta. Projekti opetti minulle paljon sulautettujen järjestelmien ohjelmoinnista, muistinhallinnasta ja reaaliaikaisesta käyttäjävuorovaikutuksesta. Lemmikin tila tallennetaan mikrokontrollerin muistiin, mikä mahdollistaa jatkuvan pelaamisen.',
+        XRGame: 'Tässä projektissa kehitettiin immersiivinen XR-peli Unity-pelimoottorilla, joka hyödyntää virtuaalitodellisuutta pelaajakokemuksen parantamiseksi. Peli sisältää erilaisia pelimekaniikkoja, jotka on suunniteltu erityisesti XR-ympäristö huomioiden. Käytin C#-ohjelmointikieltä pelilogiikan toteuttamiseen ja Unityn XR-työkaluja laitteistojen tukemiseksi. Projekti sisälsi myös käyttäjätestausta ja optimointia sujuvan kokemuksen varmistamiseksi.',
+        financeTrackerWeb: 'Budjetointisovellus on web-pohjainen työkalu, joka auttaa käyttäjiä seuraamaan menojaan ja tulojaan. Sovellus on rakennettu HTML:llä, CSS:llä ja JavaScriptillä, ja se tarjoaa intuitiivisen käyttöliittymän taloustietojen hallintaan. Käyttäjät voivat lisätä, muokata ja poistaa taloustapahtumia sekä tarkastella raportteja menoistaan. Projekti opetti minulle web-kehityksen perusteita ja tietokantojen integrointia.',
+        iotWeatherStation: 'Tässä projektissa kehitettiin IoT-sääasema Raspberry Pi -alustalle, joka kerää ympäristötietoja kuten lämpötila, kosteus ja ilmanpaine. Dataa visualisoidaan reaaliaikaisesti web-käyttöliittymässä, joka on rakennettu Pythonin Flask-frameworkilla. Sääasema hyödyntää erilaisia antureita ja lähettää kerätyn datan pilvipalveluun analysoitavaksi. Projekti tarjosi arvokasta kokemusta IoT-järjestelmien suunnittelusta, anturitekniikoista ja web-kehityksestä.',
+        tira: 'Tira-harjoitustyö on Java-ohjelmointikielellä toteutettu projekti, joka keskittyy tietorakenteiden ja algoritmien soveltamiseen käytännön ongelmiin. Työssä kehitettiin erilaisia tietorakenteita, kuten puita ja linkitettyjä listoja, sekä algoritmeja tehokkaaseen tiedon käsittelyyn. Projekti auttoi minua syventämään ymmärrystäni tietorakenteiden toiminnasta ja niiden optimoinnista suorituskyvyn parantamiseksi.',
+        NLPproject: 'Tässä luonnollisen kielen käsittelyn (NLP) projektissa analysoitiin tekstidataa Pythonin kirjastoilla, kuten NLTK ja spaCy. Projektin tavoitteena oli kehittää työkaluja tekstin esikäsittelyyn, kuten tokenisointiin, lemmatisointiin ja osittain merkityksen tunnistamiseen. Analysoitu data auttoi ymmärtämään tekstin rakenteita ja merkityksiä, mikä on hyödyllistä monissa sovelluksissa, kuten sentimenttianalyysissä ja chatboteissa.',
+        csMarketTool: 'CS-markkinatyökalu on automatisoitu sovellus, joka analysoi Counter-Strike-pelin markkinadataa tarjotakseen käyttäjille hyödyllisiä osto- ja myyntivinkkejä. Työkalu kerää reaaliaikaista dataa pelin sisäisiltä markkinoilta ja käyttää tilastollisia menetelmiä hintojen ennustamiseen. Projekti on toteutettu Pythonilla ja se hyödyntää web-skrappausta sekä data-analytiikkaa.',
+        HeightScale: 'HeightScale on React Native -sovellus, joka mittaa käyttäjän pituuden puhelimen kameran avulla. Sovellus käyttää koneoppimismalleja arvioidakseen pituuden visuaalisen datan perusteella. Projekti tarjoaa käyttäjille helpon tavan mitata pituutensa ilman erillisiä mittavälineitä. Sovellus on optimoitu mobiililaitteille ja tarjoaa intuitiivisen käyttöliittymän.',
+        minesweeper: 'Miinaharava on klassinen peli, joka on toteutettu Python-ohjelmointikielellä. Pelissä pelaajan tehtävänä on löytää kaikki miinat pelilaudalta ilman, että ne räjähtävät. Projekti sisältää pelilogiikan, käyttöliittymän ja satunnaisen miinojen sijoittelun. Miinaharava-projekti auttoi minua ymmärtämään pelisuunnittelun perusteita ja Pythonin käyttöä interaktiivisten sovellusten kehittämisessä.',
+        threeDenvGame: 'Tässä Unity-peliprojektissa kehitettiin kolmiulotteinen peliympäristö, jossa pelaajat voivat tutkia ja vuorovaikuttaa erilaisissa maisemissa. Projekti sisälsi maastonmuodostuksen, valaistuksen ja pelimekaniikkojen toteuttamisen C#-kielellä. Peli tarjoaa immersiivisen kokemuksen, jossa pelaajat voivat kokea 3D-ympäristön tarjoamat haasteet ja seikkailut.',
+        VRbeerPong: 'VR Beer Pong on virtuaalitodellisuuspeli, jossa pelaajat voivat pelata beer pongia immersiivisessä VR-ympäristössä. Peli on kehitetty Unity-pelimoottorilla ja se hyödyntää VR-laitteiden tarjoamia mahdollisuuksia realistisen pelikokemuksen luomiseksi. Projekti sisälsi pelilogiikan, fysiikan simuloinnin ja käyttäjävuorovaikutuksen toteuttamisen C#-kielellä.'  
       }
     }
   }

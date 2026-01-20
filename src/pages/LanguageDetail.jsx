@@ -5,6 +5,8 @@ import { useLanguage } from "../context/LanguageContext";
 import { translations } from "../translations/translations";
 import { getLanguages } from "../data/languages";
 import { getProjects } from "../data/projects";
+import { getTools } from "../data/tools";
+
 
 function slugify(id) {
   return id.toLowerCase().replace(/\s+/g, "-");
@@ -20,6 +22,23 @@ export default function LanguageDetail() {
 
   const languages = useMemo(() => getLanguages(t), [t]);
   const lang = languages.find((l) => slugify(l.id) === slug);
+
+  const tools = useMemo(() => getTools(t), [t]);
+
+  const techBySlug = useMemo(() => {
+    const map = {};
+
+    for (const lang of languages) {
+      map[slugify(lang.id)] = { name: lang.name, icon: lang.icon };
+    }
+
+    for (const tool of tools) {
+      map[slugify(tool.id)] = { name: tool.name, icon: tool.icon };
+    }
+
+    return map;
+  }, [languages, tools]);
+
 
   const handleBack = () => {
     if (location.state?.from) navigate(-1);
@@ -158,15 +177,16 @@ const { prevLang, nextLang } = useMemo(() => {
                   <div className="projectFooter">
                     <div className="projectTechRow">
                       {(p.technologies || []).map((tech) => {
-                        const techLang = languages.find((l) => slugify(l.id) === slugify(tech));
+                        const data = techBySlug[slugify(tech)];
 
-                        return techLang?.icon ? (
+                        return data?.icon ? (
                           <img
                             key={tech}
                             className="projectTechIcon"
-                            src={techLang.icon}
-                            alt={techLang.name}
-                            title={techLang.name}
+                            src={data.icon}
+                            alt={data.name}
+                            title={data.name}
+                            loading="lazy"
                           />
                         ) : (
                           <span key={tech} className="projectTag">
