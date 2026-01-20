@@ -14,7 +14,14 @@ export default function Home() {
     <>
       <main className="mainContent">
         <aside className="leftSidebar">
-          <div className="profileImage"></div>
+          <div className="profileImage">
+            <img
+              src="/Portfolio/images/profile_picture_portfolio.png"
+              alt={t.common.name}
+              className="profileImageImg"
+              loading="lazy"
+            />
+          </div>
           <div className="nameText">
             <p>{t.common.name}</p>
           </div>

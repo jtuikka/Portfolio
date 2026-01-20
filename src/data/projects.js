@@ -107,7 +107,7 @@ export const getProjects = (t) => [
     description: t.projects.descriptions.HeightScale,
     descriptionLong: t.projects.descriptionsLong?.HeightScale,
     link: "https://github.com/jtuikka/HeightScale",
-    media: "",
+    media: "https://youtube.com/shorts/8VgEM5N1VFY",
     technologies: ["typescript", "reactnative", "expo", "github", "vscode", "figma"],
     type: t.projects.school,
   },
