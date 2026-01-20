@@ -2,7 +2,7 @@
    CSS Variables
    ========================================================= */
 :root{
-  --border:#dcdcdc;
+  --border:#222222;
   --soft:#e9e9e9;
   --text:#f3f3f3;
   --bg:#080808;
@@ -295,6 +295,12 @@ body {
   opacity: .8;
 }
 
+.languageList {
+  margin-top: -24px;
+  padding-left: 1.2rem;
+  margin-bottom: 16px;
+}
+
 /* =========================================================
    Legacy / Optional: Hero Layout (kept for later use)
    ========================================================= */
@@ -489,16 +495,36 @@ body {
    ========================================================= */
 @media (max-width: 900px){
   .mainContent{
+    flex-direction: column;      /* 🔑 tärkein: pinoa palstat */
+    gap: 16px;                   /* tilaa väliin */
     padding-left: 16px;
     padding-right: 16px;
   }
 
   .leftSidebar{
-    max-width: 100%;
+    width: 100%;
+    max-width: none;             /* ettei rajoita */
     padding: 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  .rightSidebar{ padding: 16px; }
+  .rightSidebar{
+    width: 100%;
+    padding: 16px;
+  }
+
+  .profileImage{
+    width: min(320px, 90vw);
+    margin: 0 auto 1rem;
+  }
+
+  .contactActions{
+    width: 100%;
+  }
 
   .hero{ grid-template-columns: 1fr; }
   .bottomGrid{ grid-template-columns: 1fr 1fr; }
@@ -521,26 +547,6 @@ body {
   .bottomGrid{ grid-template-columns: 1fr; }
   .langSwitch{ right: 10px; }
   .leftSidebar{ padding: 0 12px; }
-}
-
-@media (max-width: 900px){
-  .profileImage{
-    width: min(320px, 90vw);
-    margin: 0 auto 1rem;
-  }
-}
-
-@media (max-width: 900px){
-  .leftSidebar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .contactActions{
-    width: 100%;
-  }
 }
 
 /* =========================================================

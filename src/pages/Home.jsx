@@ -101,9 +101,7 @@ export default function Home() {
         <aside className="rightSidebar">
           <div className="description">
             <h1>{t.home.welcomeTitle}</h1>
-            <p>
-              {t.home.welcomeText}
-            </p>
+            <p dangerouslySetInnerHTML={{ __html: t.home.welcomeText }} />
           </div>
         </aside>
       </main>
@@ -136,9 +134,13 @@ export default function Home() {
 
         <aside className="extrasRight">
           <h2 className="toolsTitle">{t.home.educationTitle}</h2>
-          <div className="infoBox">{t.home.extraBoxText}</div>
+          <div className="infoBox" dangerouslySetInnerHTML={{ __html: t.home.extraBoxText }}></div>
           <h2 className="toolsTitle">{t.home.languagesTitle}</h2>
-          <div className="infoBox">{t.home.extraBox2}</div>
+          <ul className="languageList">
+            {t.home.extraBox2.map((lang, i) => (
+              <li key={i}>{lang}</li>
+            ))}
+          </ul>
         </aside>
       </section>
     </>

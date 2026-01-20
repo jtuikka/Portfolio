@@ -13,7 +13,16 @@ export const translations = {
     },
     home: {
       welcomeTitle: 'Tervetuloa portfoliooni!',
-      welcomeText: 'Hei! Olen Janne Tuikka, intohimoinen tietotekniikan opiskelija, joka on kiinnostunut ohjelmistokehityksestä ja teknologiasta. Tämä portfolio esittelee projektejani, taitojani ja kokemuksiani alalta. Tutustu vapaasti ja opi lisää matkastani tietotekniikan maailmassa!',
+      welcomeText: `Hei! Olen Janne, neljännen vuoden <strong>tietotekniikan</strong> opiskelija, joka on kiinnostunut ohjelmistojen suunnittelusta ja kehityksestä. 
+      Etsin tällä hetkellä itselleni <strong>harjoittelupaikkaa</strong> sekä <strong>diplomityöpaikkaa</strong>. Olen kiinnostunut erityisesti
+      <strong>full stack -kehityksestä</strong>, <strong>mobiilisovelluksista</strong> sekä <strong>pelikehityksestä</strong>, mutta olen avoin
+       kaikenlaiselle alan töille. Olen valmis oppimaan uusia taitoja töitä varten enkä pelkää haasteita. Asun tällä hetkellä <strong>Oulussa</strong>, mutta
+       olen valmis muuttamaan muualle <strong>Suomeen</strong> tai <strong>ulkomaille</strong>.<br><br>
+       Olen avoin myös tekemään <strong>projekteja</strong> yrityksille ja yksityishenkilöille. Jotta tämä onnistuu vaivattomasti, 
+       minulta löytyy <strong>Y-tunnus</strong>. Projekteina voin suunnitella ja/tai toteuttaa esimerkiksi <strong>web-sovelluksia</strong> ja
+        <strong>mobiilisovelluksia</strong>. Ota yhteyttä, niin keskustellaan lisää!<br><br>
+       Tässä portfoliossa esittelen taitoja ja projekteja, joita olen tehnyt opintojeni aikana sekä omalla ajallani.
+       Tutustu rauhassa ja ota yhteyttä, jos jokin herätti mielenkiintosi!`,
       degree: 'Tietotekniikan kandi',
       phone: 'Puhelin',
       email: 'Sähköposti',
@@ -24,19 +33,26 @@ export const translations = {
       programmingLanguagesTitle: 'Ohjelmointikielet',
       toolsTitle: 'Työkalut',
       educationTitle: 'Koulutus',
-      extraBoxText: 'Tähän voi tulla esim. Education / Experience / Links',
+      extraBoxText: `<strong>Oulun yliopisto, tietotekniikka Diplomiopinnot 2025 - </strong><br><br>
+        Opintopisteitä 50/120 (keväällä 85-90)<br>Olen erikoistunut soveltavaan tietotekniikkaan. 
+        Opinnot ovat olleet kiinnostavia ja olen suoriutunut hyvin kursseista. 
+        Tavoitteeni on valmistua diplomi-insinööriksi ensi syksyn aikana. 
+        Tätä varten haluan löytää itselleni hyvän diplomityöpaikan kesän aikana.<br><br>
+        <strong>Oulun yliopisto, tietotekniikka Kandidaatti 2022 - 2025</strong><br><br>
+        180 opintopistettä 4,2 keskiarvolla.<br>
+        Valmistuin kandidaatiksi keväällä 2025, pääaineena tietotekniikka ja sivuaineena yrittäjyys.`,
       languagesTitle: 'Kielet',
-      extraBox2: 'Toinen laatikko',
+      extraBox2: ['Suomi (äidinkieli)', 'Englanti (erinomainen)', 'Ruotsi (perusteet)'],
       toolDescriptions: {
-        git: 'Versionhallinta ja yhteistyökalu koodin hallintaan.',
-        github: 'Alusta koodin tallentamiseen, arviointiin ja yhteistyöhön.',
-        figma: 'Suunnittelu- ja prototyyppityökalu käyttöliittymien luomiseen.',
-        vscode: 'Microsoftin kehittämä koodieditori Windowsille, Linuxille ja macOS:lle.',
-        androidstudio: 'Googlen Androidin virallinen kehitysympäristö (IDE).',
-        unity: 'Monikäyttöinen pelimoottori pelien ja simulaatioiden kehittämiseen.',
-        arduino: 'Avoimen lähdekoodin elektroniikka-alusta helposti käytettävillä laitteilla ja ohjelmistoilla.',
-        expo: 'Framework ja alusta universaaleille React-sovelluksille, mahdollistaa nopean kehityksen.',
-        raspberrypi: 'Pieni, edullinen tietokone ohjelmointiin, elektroniikkaprojekteihin ja tietotekniikan oppimiseen.'
+        git: 'Käytän versionhallintaan Git-työkalua yhdessä GitHubin kanssa. Osaan käyttää Gitin peruskäskyjä tehokkaasti.',
+        github: 'GitHub on alusta, jota käytän projektien jakamiseen ja hallitsemiseen. Tunnen GitHubin ominaisuudet hyvin.',
+        figma: 'Suunnittelen käyttöliittymiä ja prototyyppejä Figma-työkalulla. Osaan luoda interaktiivisia malleja.',
+        vscode: 'Koodieditori, jota käytän päivittäiseen ohjelmointiin ja debuggaamiseen. Käytän erilaisia laajennuksia työn tehostamiseksi.',
+        androidstudio: 'Osaan hyödyntää Android Studioa mobiilisovellusten kehityksessä. Android Studiolla testaan sovelluksia eri laitteilla.',
+        unity: 'Käytän Unitya pelien kehitykseen. Tunnen Unityn perusominaisuudet ja työkalut pelimekaniikkojen toteuttamiseen.',
+        arduino: 'Olen käyttänyt Arduino-alustaa mikrokontrolleripohjaisten projektien toteuttamiseen. Tunnen Arduinon ohjelmoinnin perusteet.',
+        expo: 'Olen käyttänyt Expoa React Native -sovellusten kehityksessä. Expo helpottaa sovellusten rakentamista ja testaamista.',
+        raspberrypi: 'Olen käyttänyt Raspberry Pi -laitteita projekteissa, kuten IoT-sääaseman rakentamisessa. Tunnen laitteen peruskäytön ja ohjelmoinnin.'
       }
     },
     languages: {
@@ -50,17 +66,17 @@ export const translations = {
       projectsTitle: 'Projektit',
       noRelatedProjects: 'Tähän kieleen liittyviä projekteja ei löytynyt.',
       descriptions: {
-        typescript: 'Tyypitän React-projekteja ja teen selkeämpiä rajapintoja.',
-        python: 'Skriptaus, automaatio ja pieniä datakokeiluja.',
-        java: 'OOP, GUI-työt, kouluprojektit ja perusarkkitehtuurit.',
-        c: 'Unity-projektit, gameplay-logiikka ja XR/VR-kokeilut.',
-        csharp: 'Unity-projektit, gameplay-logiikka ja XR/VR-kokeilut.',
-        sql: 'Peruskyselyt, relaatiomallit ja CRUD.',
-        kotlin: 'Skriptaus, automaatio ja pieniä datakokeiluja.',
-        react: 'Skriptaus, automaatio ja pieniä datakokeiluja.',
-        reactnative: 'Skriptaus, automaatio ja pieniä datakokeiluja.',
-        html: 'Unity-projektit, gameplay-logiikka ja XR/VR-kokeilut.',
-        css: 'Unity-projektit, gameplay-logiikka ja XR/VR-kokeilut.',
+        typescript: 'Web-kehitys, React-sovellukset ja frontend-arkkitehtuurit.',
+        python: 'Hyvä Python-osaaminen, jota olen hyödyntänyt analytiikassa, NLP-projekteissa ja ohjelmistokehityksessä. ',
+        java: 'Vahva Java-osaaminen, erityisesti olio-ohjelmoinnissa, tietorakenteissa ja algoritmeissa.',
+        c: 'Perusteet sulautetuista järjestelmistä ja mikrokontrollereiden ohjelmoinnista.',
+        csharp: 'Unity-pelimoottorin käyttö pelikehityksessä, erityisesti XR- ja VR-projekteissa.',
+        sql: 'Peruskyselyt relaatiotietokannoissa ja tietokantasuunnittelussa.',
+        kotlin: 'Perusteet Android-sovelluskehityksestä Android Studio -ympäristössä.',
+        react: 'Osaan Reactin käytön web-sovelluksissa, komponenttien rakentamisessa ja tilanhallinnassa.',
+        reactnative: 'React Native -sovelluskehityksen perusteet.',
+        html: 'HTML:n käyttö verkkosivujen rakenteen määrittelyssä.',
+        css: 'CSS:llä hallitsen web-sivujen ulkoasun ja responsiivisen suunnittelun.',
         javascript: 'Rakennan React-sovelluksia, komponentteja ja pieniä työkaluja.'
       },
       descriptionsLong: {
@@ -168,7 +184,18 @@ export const translations = {
     },
     home: {
       welcomeTitle: 'Welcome to my portfolio!',
-      welcomeText: 'Hello! I\'m Janne Tuikka, a passionate computer science and engineering student with a keen interest in software development and technology. This portfolio showcases my projects, skills, and experiences in the field. Feel free to explore and learn more about my journey in the world of computer science!',
+      welcomeText: `Hi! I'm Janne, a fourth-year <strong>Computer Science and Engineering</strong> student with a strong interest in software design and development.
+        I am currently looking for an <strong>internship</strong> as well as a <strong>Master's thesis position</strong>. I am particularly interested in
+        <strong>full stack development</strong>, <strong>mobile applications</strong>, and <strong>game development</strong>, but I am open
+        to all kinds of opportunities within the field. I am eager to learn new skills for work and I am not afraid of challenges.
+        I currently live in <strong>Oulu</strong>, but I am willing to relocate elsewhere in <strong>Finland</strong> or <strong>abroad</strong>.<br><br>
+
+        I am also open to working on <strong>projects</strong> for companies and private clients. To make collaboration smooth and flexible,
+        I have a <strong>business ID (Y-tunnus)</strong>. As project work, I can design and/or develop, for example,
+        <strong>web applications</strong> and <strong>mobile applications</strong>. Feel free to get in touch so we can discuss further!<br><br>
+
+        In this portfolio, I present the skills and projects I have worked on during my studies as well as in my free time.
+        Take a look around and don't hesitate to contact me if something catches your interest!`,
       degree: 'Bachelor of Computer Science and Engineering',
       phone: 'Phone',
       email: 'Email',
@@ -179,19 +206,28 @@ export const translations = {
       programmingLanguagesTitle: 'Programming Languages',
       toolsTitle: 'Tools',
       educationTitle: 'Education',
-      extraBoxText: 'This can contain e.g. Education / Experience / Links',
+      extraBoxText: `<strong>University of Oulu, Computer Science - Master's Studies 2025 -</strong><br><br>
+        50/120 ECTS completed (85-90 ECTS by spring)<br>
+        I specialize in applied computer science.
+        The studies have been interesting, and I have performed well in my courses.
+        My goal is to graduate as a Master of Science in Technology next autumn.
+        For this reason, I am looking for a suitable Master's thesis position during the summer.<br><br>
+
+        <strong>University of Oulu, Computer Science - Bachelor's Degree 2022 - 2025</strong><br><br>
+        180 ECTS with a GPA of 4.2.<br>
+        I graduated with a Bachelor's degree in spring 2025, majoring in computer science with a minor in entrepreneurship.`,
       languagesTitle: 'Languages',
-      extraBox2: 'Second box',
+      extraBox2: ['Finnish (native)', 'English (excellent)', 'Swedish (basics)'],
       toolDescriptions: {
-        git: 'Version control and collaboration tool for managing code repositories.',
-        github: 'Platform for hosting and reviewing code, managing projects, and collaborating with others.',
-        figma: 'Design and prototyping tool for creating user interfaces and experiences.',
-        vscode: 'Source-code editor developed by Microsoft for Windows, Linux and macOS.',
-        androidstudio: 'Official integrated development environment (IDE) for Google\'s Android operating system.',
-        unity: 'Cross-platform game engine used to develop video games and simulations for computers, consoles, and mobile devices.',
-        arduino: 'Open-source electronics platform based on easy-to-use hardware and software.',
-        expo: 'Framework and platform for universal React applications, enabling rapid development and deployment.',
-        raspberrypi: 'Small, affordable computer used for programming, electronics projects, and learning about computing.'
+        git: 'I use Git for version control together with GitHub. I am proficient in using Git’s basic commands efficiently.',
+        github: 'GitHub is a platform I use for sharing and managing projects. I am very familiar with GitHub’s features.',
+        figma: 'I design user interfaces and prototypes using Figma. I can create interactive designs and prototypes.',
+        vscode: 'A code editor I use daily for programming and debugging. I utilize various extensions to improve productivity.',
+        androidstudio: 'I use Android Studio for mobile application development. With Android Studio, I test applications on different devices.',
+        unity: 'I use Unity for game development. I am familiar with Unity’s core features and tools for implementing game mechanics.',
+        arduino: 'I have used the Arduino platform to build microcontroller-based projects. I am familiar with the basics of Arduino programming.',
+        expo: 'I have used Expo in React Native application development. Expo simplifies building and testing applications.',
+        raspberrypi: 'I have used Raspberry Pi devices in projects such as building an IoT weather station. I am familiar with basic usage and programming of the device.'
       }
     },
     languages: {
@@ -205,17 +241,17 @@ export const translations = {
       projectsTitle: 'Projects',
       noRelatedProjects: 'No projects related to this language were found.',
       descriptions: {
-        typescript: 'Typing React projects and creating clearer interfaces.',
-        python: 'Scripting, automation, and small data experiments.',
-        java: 'OOP, GUI work, school projects, and basic architectures.',
-        c: 'Unity projects, gameplay logic, and XR/VR experiments.',
-        csharp: 'Unity projects, gameplay logic, and XR/VR experiments.',
-        sql: 'Basic queries, relational models, and CRUD.',
-        kotlin: 'Scripting, automation, and small data experiments.',
-        react: 'Scripting, automation, and small data experiments.',
-        reactnative: 'Scripting, automation, and small data experiments.',
-        html: 'Unity projects, gameplay logic, and XR/VR experiments.',
-        css: 'Unity projects, gameplay logic, and XR/VR experiments.',
+        typescript: 'Web development, React applications, and frontend architectures.',
+        python: 'Strong Python skills applied in analytics, NLP projects, and software development.',
+        java: 'Strong Java skills, especially in object-oriented programming, data structures, and algorithms.',
+        c: 'Fundamentals of embedded systems and microcontroller programming.',
+        csharp: 'Using the Unity game engine for game development, particularly in XR and VR projects.',
+        sql: 'Basic querying in relational databases and database design.',
+        kotlin: 'Fundamentals of Android application development in the Android Studio environment.',
+        react: 'Proficient in using React for web applications, component development, and state management.',
+        reactnative: 'Fundamentals of React Native application development.',
+        html: 'Using HTML to define the structure of web pages.',
+        css: 'Using CSS to control web page styling and responsive design.',
         javascript: 'Building React applications, components, and small tools.'
       },
       descriptionsLong: {
