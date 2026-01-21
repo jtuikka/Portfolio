@@ -88,7 +88,7 @@ export const getProjects = (t) => [
     descriptionLong: t.projects.descriptionsLong?.NLPproject,
     link: "https://github.com/saarol2/zips-law-distribution-suomi24",
     media: "",
-    technologies: ["python", "github"],
+    technologies: ["python","sql", "github"],
     type: t.projects.school,
   },
     {

@@ -195,7 +195,7 @@ export default function ProjectDetail() {
           {/* VASEN */}
           <div className="projectMainHeader">
             <h1 className="projectDetailTitle">{project.name}</h1>
-            <p className="projectDetailDescription">{project.descriptionLong}</p>
+            <p className="projectDetailDescription" dangerouslySetInnerHTML={{ __html: project.descriptionLong }}></p>
 
             {/* ✅ Git-linkki vain jos löytyy */}
             {project.link ? (
