@@ -40,7 +40,10 @@ export const translations = {
         Tätä varten haluan löytää itselleni hyvän diplomityöpaikan kesän aikana.<br><br>
         <strong>Oulun yliopisto, tietotekniikka Kandidaatti 2022 - 2025</strong><br><br>
         180 opintopistettä 4,2 keskiarvolla.<br>
-        Valmistuin kandidaatiksi keväällä 2025, pääaineena tietotekniikka ja sivuaineena yrittäjyys.`,
+        Valmistuin kandidaatiksi keväällä 2025, pääaineena tietotekniikka ja sivuaineena yrittäjyys. <br><br>
+        Opintojen aikana olen oppinut ohjelmoinnin lisäksi myös projektityöskentelyä, tiimityötaitoja ja ongelmanratkaisua.
+        Olen myös kehittänyt kykyäni oppia uusia teknologioita nopeasti ja soveltaa niitä käytännön projekteissa.
+        `,
       languagesTitle: 'Kielet',
       extraBox2: ['Suomi (äidinkieli)', 'Englanti (erinomainen)', 'Ruotsi (perusteet)'],
       toolDescriptions: {
@@ -348,16 +351,18 @@ export const translations = {
 
         <strong>University of Oulu, Computer Science - Bachelor's Degree 2022 - 2025</strong><br><br>
         180 ECTS with a GPA of 4.2.<br>
-        I graduated with a Bachelor's degree in spring 2025, majoring in computer science with a minor in entrepreneurship.`,
+        I graduated with a Bachelor's degree in spring 2025, majoring in computer science with a minor in entrepreneurship. <br><br>
+        During my studies, in addition to programming, I have learned project-based work, teamwork skills, and problem-solving. 
+        I have also developed my ability to quickly learn new technologies and apply them in practical projects.`,
       languagesTitle: 'Languages',
       extraBox2: ['Finnish (native)', 'English (excellent)', 'Swedish (basics)'],
       toolDescriptions: {
-        git: 'I use Git for version control together with GitHub. I am proficient in using Git’s basic commands efficiently.',
-        github: 'GitHub is a platform I use for sharing and managing projects. I am very familiar with GitHub’s features.',
+        git: 'I use Git for version control together with GitHub. I am proficient in using Git\'s basic commands efficiently.',
+        github: 'GitHub is a platform I use for sharing and managing projects. I am very familiar with GitHub\'s features.',
         figma: 'I design user interfaces and prototypes using Figma. I can create interactive designs and prototypes.',
         vscode: 'A code editor I use daily for programming and debugging. I utilize various extensions to improve productivity.',
         androidstudio: 'I use Android Studio for mobile application development. With Android Studio, I test applications on different devices.',
-        unity: 'I use Unity for game development. I am familiar with Unity’s core features and tools for implementing game mechanics.',
+        unity: 'I use Unity for game development. I am familiar with Unity\'s core features and tools for implementing game mechanics.',
         arduino: 'I have used the Arduino platform to build microcontroller-based projects. I am familiar with the basics of Arduino programming.',
         expo: 'I have used Expo in React Native application development. Expo simplifies building and testing applications.',
         raspberrypi: 'I have used Raspberry Pi devices in projects such as building an IoT weather station. I am familiar with basic usage and programming of the device.'
